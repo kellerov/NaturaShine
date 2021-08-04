@@ -1,0 +1,75 @@
+.advantages {
+  &__background {
+    background: #e8e7e2;
+    border-radius: 6px;
+    margin: 47px 0 67px 0;
+  }
+  &__content {
+    text-align: center;
+    padding-top: 56px;
+  }
+  &__subtitle {
+    @include subtitle;
+    color: $title-color;
+    padding-bottom: 8px;
+  }
+  &__text {
+    @include text;
+    color: $subtext-color;
+  }
+  &__subject {
+    @include subject;
+    color: $title-color;
+    padding: 12px 0 4px 0;
+  }
+  &__descr {
+    @include descr;
+    color: $detail-color;
+    padding-bottom: 16px;
+  }
+  &__wrapper {
+    // max-width: 100%;
+    height: 248px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    // padding: 27px;
+    flex-basis: 25%;
+  }
+  &__services {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__icon {
+    height: 64px;
+    width: 64px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+    background: #fcfcfa;
+  }
+  img {
+    width: 36px;
+    height: 38px;
+  }
+}
+
+.button_more {
+  @include more;
+  color: $subtext-color;
+  width: 109px;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  transition: all 0.1s ease;
+  background: transparent;
+  &:hover {
+    box-shadow: 0 1px 5px rgb(0 0 0 / 30%);
+    background-color: #ededed;
+  }
+}

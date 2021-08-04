@@ -1,0 +1,10 @@
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="24" height="24" transform="translate(0 0.00585938)" fill="url(#pattern0)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.00006 7.49422V7.00586C3.00006 5.90129 3.89549 5.00586 5.00006 5.00586H19.0001C20.1046 5.00586 21.0001 5.90129 21.0001 7.00586V7.49424C21.0001 7.50148 21.0001 7.50871 21.0001 7.51595V17.0059C21.0001 18.1104 20.1046 19.0059 19.0001 19.0059H5.00006C3.89549 19.0059 3.00006 18.1104 3.00006 17.0059V7.51596C2.99998 7.50872 2.99998 7.50147 3.00006 7.49422ZM19.0001 7.00586L12.0001 12.2559L5.00006 7.00586H19.0001ZM19.0001 9.50586V17.0059H5.00006L5.00006 9.50586L11.4001 14.3059C11.7556 14.5725 12.2445 14.5725 12.6001 14.3059L19.0001 9.50586Z" fill="black" fill-opacity="0.38"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0"/>
+</pattern>
+<image id="image0" width="1" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAQSURBVHgBAQUA+v8AAAAAAAAFAAFkeJU4AAAAAElFTkSuQmCC"/>
+</defs>
+</svg>

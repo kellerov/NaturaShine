@@ -1,0 +1,113 @@
+.footer {
+  padding: 48px 0px 40px;
+  background: #e8e7e2;
+  &__social_item {
+    padding: 0 8px;
+    transition: all 0.1s ease;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__descr {
+    @include license;
+    color: $subtext-color;
+    padding-top: 8px;
+    text-align: right;
+    display: block;
+    transition: all 0.1s ease;
+    &:hover {
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+.divider {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  margin: 24px 0 24px 0;
+}
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories {
+  transition: all 0.1s ease;
+  &__item {
+    padding-bottom: 8px;
+    &:first-child {
+      padding-bottom: 16px;
+    }
+  }
+  &__link {
+    @include descr;
+    color: $subtext-color;
+    &:hover {
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+  &__link-main {
+    @include main;
+    color: $subtext-color;
+    &:hover {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+.clients {
+  flex-basis: 63%;
+  &__item {
+    padding-bottom: 8px;
+    &:first-child {
+      padding-bottom: 16px;
+    }
+  }
+  &__link {
+    @include descr;
+    color: $subtext-color;
+    &:hover {
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+  &__link-main {
+    @include main;
+    color: $subtext-color;
+    &:hover {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+.contacts {
+  text-align: right;
+  &__item {
+    padding-bottom: 108px;
+    &:first-child {
+      padding-bottom: 16px;
+    }
+  }
+  &__item-img {
+    content: "";
+    width: 48px;
+    height: 32px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding: 4px;
+    margin-left: 8px;
+  }
+  &__link-phone {
+    @include descr;
+    color: $subtext-color;
+    &:hover {
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+  &__link-main {
+    @include main;
+    color: $subtext-color;
+    &:hover {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}

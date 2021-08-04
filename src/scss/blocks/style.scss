@@ -1,0 +1,49 @@
+@import "../base/mixins";
+@import "../base/variables";
+@import "../blocks/header.scss";
+@import "../blocks/swiper.scss";
+@import "../blocks/catalog.scss";
+@import "../blocks/advantages.scss";
+@import "../blocks/technologies.scss";
+@import "../blocks/mailing.scss";
+@import "../blocks/footer.scss";
+@import "../blocks/media.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(0deg, #fcfcfa, #fcfcfa), #f5f7fa;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1358px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}

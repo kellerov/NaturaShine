@@ -1,0 +1,77 @@
+.subtitle {
+  @include subtitle;
+  color: $title-color;
+}
+
+.title {
+  @include title;
+  padding-top: 12px;
+}
+
+.text {
+  @include text;
+  color: $descr-color;
+}
+
+.swiper-container {
+  position: static;
+  margin-top: 18px;
+}
+
+.swiper-slide {
+  & > div {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 380px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+  }
+  &__content {
+    flex-basis: 30%;
+    margin-left: 208px;
+  }
+}
+
+.swiper-pagination {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 10px;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 2px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.38);
+  border-radius: 24px;
+  &:hover {
+    opacity: 1;
+    transition: all 0.1s ease;
+  }
+}
+
+.swiper-button-prev {
+  @include swiper-arrow-btn;
+  background-image: url(../icons/icon_arrow_L.svg);
+  left: -25px;
+  transform: translate(50%, 50%);
+  transition: all 0.1s ease;
+  &:hover {
+    box-shadow: 0 1px 10px rgb(0 0 0 / 30%);
+  }
+}
+
+.swiper-button-next {
+  @include swiper-arrow-btn;
+  background-image: url(../icons/icon_arrow_R.svg);
+  right: 15px;
+  transform: translate(50%, 50%);
+  transition: all 0.1s ease;
+  &:hover {
+    box-shadow: 0 1px 10px rgb(0 0 0 / 30%);
+  }
+}
