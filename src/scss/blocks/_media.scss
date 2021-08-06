@@ -437,9 +437,7 @@
       text-align: center;
     }
     &__text {
-      @include descr;
       color: #1f1f1e;
-      // color: #3389ba;
       font-size: 13px;
       line-height: 13px;
       display: block;

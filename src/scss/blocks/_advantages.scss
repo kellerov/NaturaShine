@@ -9,22 +9,19 @@
     padding-top: 56px;
   }
   &__subtitle {
-    @include subtitle;
-    color: $title-color;
     padding-bottom: 8px;
+    color: $mono-a-a900;
   }
   &__text {
-    @include text;
-    color: $subtext-color;
+    color: $mono-a-a700;
   }
   &__subject {
     @include subject;
-    color: $title-color;
+    color: $mono-a-a900;
     padding: 12px 0 4px 0;
   }
   &__descr {
-    @include descr;
-    color: $detail-color;
+    color: $mono-a-a600;
     padding-bottom: 16px;
   }
   &__wrapper {
@@ -59,8 +56,7 @@
 }
 
 .button_more {
-  @include more;
-  color: $subtext-color;
+  color: $mono-a-a700;
   width: 109px;
   height: 40px;
   cursor: pointer;

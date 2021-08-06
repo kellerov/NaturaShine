@@ -72,30 +72,27 @@
     flex-basis: 50%;
   }
   &__descr {
-    @include descr;
-    color: $text-color;
+    color: $mono-a-a800;
     &:hover {
       opacity: 0.7;
     }
   }
   &__descr_white {
-    @include descr;
-    color: $descr-color;
+    color: $mono-b-a900;
     &:hover {
       opacity: 0.9;
     }
   }
   &__subtitle {
     padding: 4px 0 4px 0;
-    @include subtitle;
-    color: #ffffff;
+    color: $mono-b-a500;
     &:hover {
       opacity: 0.9;
     }
   }
   &__subtitle-mid {
     @include mid;
-    color: $title-color;
+    color: $mono-a-a900;
     padding-top: 8px;
     display: block;
     &:hover {
@@ -103,8 +100,7 @@
     }
   }
   &__text {
-    @include text;
-    color: #ffffff;
+    color: $mono-b-a500;
     &:hover {
       opacity: 0.9;
     }

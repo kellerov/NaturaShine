@@ -13,8 +13,7 @@
     justify-content: space-between;
   }
   &__descr {
-    @include license;
-    color: $subtext-color;
+    color: $mono-a-a700;
     padding-top: 8px;
     text-align: right;
     display: block;
@@ -42,15 +41,14 @@
     }
   }
   &__link {
-    @include descr;
-    color: $subtext-color;
+    color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.8);
     }
   }
   &__link-main {
     @include main;
-    color: $subtext-color;
+    color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.7);
     }
@@ -65,15 +63,14 @@
     }
   }
   &__link {
-    @include descr;
-    color: $subtext-color;
+    color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.8);
     }
   }
   &__link-main {
     @include main;
-    color: $subtext-color;
+    color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.7);
     }
@@ -97,15 +94,14 @@
     margin-left: 8px;
   }
   &__link-phone {
-    @include descr;
-    color: $subtext-color;
+    color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.8);
     }
   }
   &__link-main {
     @include main;
-    color: $subtext-color;
+    color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.7);
     }

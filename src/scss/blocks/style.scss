@@ -47,3 +47,44 @@ h6 {
   margin: 0 auto;
   position: relative;
 }
+
+.title {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.2px;
+}
+
+.subtitle {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.body-100 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+.body-200 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.caption {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+
+.typography {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}

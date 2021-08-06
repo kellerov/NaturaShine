@@ -1,16 +1,14 @@
 .subtitle {
-  @include subtitle;
-  color: $title-color;
+  color: $mono-a-a900;
 }
 
 .title {
-  @include title;
+  color: $mono-b-a500;
   padding-top: 12px;
 }
 
 .text {
-  @include text;
-  color: $descr-color;
+  color: $mono-b-a900;
 }
 
 .swiper-container {
