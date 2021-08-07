@@ -5,32 +5,11 @@
   letter-spacing: 0.15px;
 }
 
-@mixin subject {
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.1px;
-}
-
-@mixin mid {
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-}
-
 @mixin email {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.15px;
-}
-
-@mixin price {
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
 }
 
 @mixin swiper-arrow-btn {

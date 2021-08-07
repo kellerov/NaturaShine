@@ -1,59 +1,55 @@
 .header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   margin-bottom: 26px;
-}
-.header__top {
-  display: flex;
-  margin-top: 24px;
-  align-items: center;
-  grid-gap: 0 24px;
-}
-
-.header__bottom {
-  padding: 14px 0px 14px;
-}
-
-.header__logo {
-  padding-top: 5px;
+  &__top {
+    display: flex;
+    margin-top: 24px;
+    align-items: center;
+    grid-gap: 0 24px;
+  }
+  &__bottom {
+    padding: 14px 0px 14px;
+  }
+  &__logo {
+    padding-top: 5px;
+  }
 }
 
 .search-box {
   position: relative;
   top: 0;
   left: 0;
-}
-
-input[name="query"] {
-  font-size: 14px;
-  line-height: 20px;
-  padding: 10px;
-  width: 997px;
-  height: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  background-color: transparent;
-  transition: all 0.1s ease;
-  color: #000;
-  outline: none;
-
-  &:focus,
-  &:hover {
-    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.12);
+  flex-grow: 1;
+  &__input {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+    // width: 997px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    background-color: transparent;
+    transition: all 0.1s ease;
+    color: #000;
+    outline: none;
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.12);
+    }
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.38);
+    }
   }
-
-  &::placeholder {
-    color: rgba(0, 0, 0, 0.38);
+  &__submit {
+    background: url(../icons/icon_serch.svg) center center no-repeat;
+    width: 32px;
+    height: 39px;
+    border: none;
+    margin-left: -36px;
+    cursor: pointer;
+    position: absolute;
   }
-}
-
-input[type="submit"] {
-  background: url(../icons/icon_serch.svg) center center no-repeat;
-  width: 32px;
-  height: 39px;
-  border: none;
-  margin-left: -36px;
-  cursor: pointer;
-  position: absolute;
 }
 
 .menu {
@@ -92,7 +88,7 @@ input[type="submit"] {
   display: inline-block;
   &__white-wrapper {
     position: relative;
-    right: -11px;
+    right: 0px;
     top: -2px;
     background: $mono-b-a500;
     border-radius: 30px;

@@ -16,7 +16,6 @@
     color: $mono-a-a700;
   }
   &__subject {
-    @include subject;
     color: $mono-a-a900;
     padding: 12px 0 4px 0;
   }
@@ -25,19 +24,18 @@
     padding-bottom: 16px;
   }
   &__wrapper {
-    // max-width: 100%;
     height: 248px;
     display: flex;
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    // padding: 27px;
-    flex-basis: 25%;
   }
   &__services {
     padding: 24px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    // grid-template-columns: repeat(auto-fill, 320px);
+    // grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
   &__icon {
     height: 64px;
