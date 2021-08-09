@@ -1,6 +1,6 @@
 .advantages {
   &__background {
-    background: #e8e7e2;
+    background: $secondary-1-300;
     border-radius: 6px;
     margin: 47px 0 67px 0;
   }
@@ -45,7 +45,7 @@
     border-radius: 32px;
     align-items: center;
     justify-content: center;
-    background: #fcfcfa;
+    background: $other-background;
   }
   img {
     width: 36px;
@@ -64,6 +64,6 @@
   background: transparent;
   &:hover {
     box-shadow: 0 1px 5px rgb(0 0 0 / 30%);
-    background-color: #ededed;
+    background-color: $other-background-1;
   }
 }

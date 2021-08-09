@@ -1,28 +1,14 @@
-@mixin main {
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.15px;
-}
-
-@mixin email {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.15px;
-}
-
 @mixin swiper-arrow-btn {
   width: 40px;
   height: 40px;
-  background-color: $mono-b-a500;
+  background-color: $mono-b-500;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 24px 24px;
   transition: all 0.1s ease;
   //-параметр свечения окружности-//
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 2px 1px $mono-a-a200;
   &:after {
     font-family: none;
     content: "";
