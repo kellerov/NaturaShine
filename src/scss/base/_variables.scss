@@ -1,3 +1,5 @@
+//-- Типография --//
+
 $warn: rgba(244, 67, 54, 0.7);
 $mono-a-a100: rgba(0, 0, 0, 0.08);
 $mono-a-a200: rgba(0, 0, 0, 0.12);
@@ -21,3 +23,8 @@ $gradient-overlay-d800: linear-gradient(
   rgba(0, 0, 0, 0) 0%,
   rgba(0, 0, 0, 0.8) 100%
 );
+
+//-- Медиа запросы (Адптив) --//
+
+$tablet: "(max-width: 1439px)";
+$mobile: "(max-width: 767px)";
