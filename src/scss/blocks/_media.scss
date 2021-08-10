@@ -1,3 +1,245 @@
+@media (max-width: 1439px) {
+  .shop-cart {
+    &__white-wrapper {
+      right: 56px;
+      top: 2px;
+    }
+  }
+  .title {
+    padding-top: 8px;
+  }
+  .swiper {
+    .swiper-slide {
+      &__content {
+        flex-basis: 32%;
+      }
+    }
+  }
+  .catalog {
+    .show {
+      &__all {
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    &__item_img {
+      height: 160px;
+    }
+    &__item_link {
+      text-align: center;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .advantages {
+    &__subject {
+      padding: 14px 0 4px 0;
+    }
+    &__services {
+      padding: 12px;
+    }
+    .button_more:hover {
+      background: none;
+      box-shadow: none;
+    }
+  }
+
+  .technologies {
+    .show {
+      &__all {
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    &__box {
+      padding-left: 0;
+    }
+    &__oven-img {
+      padding: 2px 90px;
+    }
+    &__food-img {
+      width: 364px;
+    }
+    &__cooler {
+      margin-bottom: 24px;
+    }
+    &__info {
+      padding-top: 65px;
+    }
+    &__subtitle {
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &__text {
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &__card {
+      text-align: center;
+    }
+    &__descr {
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &__descr_white:hover {
+      opacity: 1;
+    }
+    &__content-top {
+      padding: 35px 16px;
+      flex-basis: 56%;
+    }
+  }
+
+  .mailing img {
+    margin-left: -70px;
+  }
+  .footer {
+    padding: 26px 0 62px;
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+    &__social_item {
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .clients {
+    flex-basis: 18%;
+    // display: flex;
+    // // justify-content: center;
+    // justify-content: space-around;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    border-bottom: 1px solid $mono-a-a100;
+    margin-bottom: 26px;
+    &__top {
+      display: flex;
+      margin-top: 24px;
+      align-items: center;
+      grid-gap: 0 24px;
+
+      display: grid;
+      grid-template-areas:
+        "header__logo menu"
+        "search-box search-box"
+        "menu__panel menu__panel";
+      grid-template-columns: 75% 1fr;
+      grid-template-rows: 45px 1fr;
+    }
+    &__bottom {
+      padding: 14px 0px 14px;
+      grid-area: header__bottom;
+    }
+    &__logo {
+      padding-top: 5px;
+      grid-area: header__logo;
+    }
+  }
+
+  .search-box {
+    // flex-grow: 1;
+    grid-area: search-box;
+    &__input {
+      // width: 997px;
+    }
+  }
+  .button_subscribe {
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  .menu {
+    grid-area: menu;
+    &__panel {
+      display: flex;
+      align-items: center;
+      grid-area: menu__panel;
+    }
+    // &__left {
+    //   grid-area: menu__left;
+    // }
+    &__item:last-child {
+      padding-right: 0px;
+    }
+    &__item_lower {
+      padding-right: 24px;
+    }
+    &__text {
+      display: none;
+    }
+    &__link {
+      color: $mono-a-a800;
+      transition: all 0.1s ease;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+  .shop-cart {
+    &__white-wrapper {
+      right: -4px;
+      top: 1px;
+    }
+  }
+  .swiper {
+    .swiper-slide {
+      &__content {
+        flex-basis: 55%;
+        margin-left: 135px;
+      }
+    }
+    .swiper-pagination {
+      display: none;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+  .nxt {
+    display: none;
+  }
+  .card:hover {
+    box-shadow: none;
+    background: none;
+    transition: none;
+  }
+  .button_mini {
+    opacity: 1;
+    &:hover {
+      box-shadow: none;
+      transform: none;
+    }
+  }
+  .technologies {
+    &__oven-img {
+      padding: 2px 46px;
+    }
+    &__food-img {
+      width: 276px;
+    }
+  }
+  .mailing img {
+    margin-left: -119px;
+    top: 13%;
+  }
+}
+
 // @media (max-width: 1439px) {
 // }
 // @media (max-width: 1200px) {

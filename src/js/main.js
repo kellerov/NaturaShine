@@ -122,20 +122,20 @@ const modified = new Swiper(".modified", {
 
 //-- Menu hamburger --//
 
-window.addEventListener("DOMContentLoaded", () => {
-  const menu = document.querySelector(".menu__left"),
-    menuItem = document.querySelectorAll(".menu__item_lower"),
-    hamburger = document.querySelector(".hamburger");
+// window.addEventListener("DOMContentLoaded", () => {
+//   const menu = document.querySelector(".menu__left"),
+//     menuItem = document.querySelectorAll(".menu__item_lower"),
+//     hamburger = document.querySelector(".hamburger");
 
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("hamburger_active");
-    menu.classList.toggle("menu__left_active");
-  });
+//   hamburger.addEventListener("click", () => {
+//     hamburger.classList.toggle("hamburger_active");
+//     menu.classList.toggle("menu__left_active");
+//   });
 
-  menuItem.forEach((item) => {
-    item.addEventListener("click", () => {
-      hamburger.classList.toggle("hamburger_active");
-      menu.classList.toggle("menu__left_active");
-    });
-  });
-});
+//   menuItem.forEach((item) => {
+//     item.addEventListener("click", () => {
+//       hamburger.classList.toggle("hamburger_active");
+//       menu.classList.toggle("menu__left_active");
+//     });
+//   });
+// });
