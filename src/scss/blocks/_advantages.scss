@@ -33,9 +33,10 @@
   &__services {
     padding: 24px;
     display: grid;
+    justify-content: center;
     // grid-template-columns: repeat(auto-fill, 320px);
     // grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   }
   &__icon {
     height: 64px;
