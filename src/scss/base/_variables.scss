@@ -1,6 +1,23 @@
-$title-color: rgba(0, 0, 0, 0.88);
-$text-color: rgba(0, 0, 0, 0.72);
-$subtext-color: rgba(0, 0, 0, 0.6);
-$descr-color: rgba(255, 255, 255, 0.86);
-$current-color: rgba(0, 0, 0, 0.38);
-$detail-color: rgba(0, 0, 0, 0.54);
+$warn: rgba(244, 67, 54, 0.7);
+$mono-a-a100: rgba(0, 0, 0, 0.08);
+$mono-a-a200: rgba(0, 0, 0, 0.12);
+$mono-a-a900: rgba(0, 0, 0, 0.88);
+$mono-a-a800: rgba(0, 0, 0, 0.72);
+$mono-a-a700: rgba(0, 0, 0, 0.6);
+$mono-a-a75: rgba(0, 0, 0, 0.06);
+$mono-a-a600: rgba(0, 0, 0, 0.54);
+$mono-a-a500: rgba(0, 0, 0, 0.38);
+$mono-a-500: #000;
+$mono-b-a900: rgba(255, 255, 255, 0.86);
+$mono-b-500: #fff;
+$primary-300: #3389ba;
+$secondary-1-300: #e8e7e2;
+$secondary-2-300: #001f39;
+$other-background: #fcfcfa;
+$other-background-1: #f5f7fa;
+$other-background-2: #f5f3f0;
+$gradient-overlay-d800: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0) 0%,
+  rgba(0, 0, 0, 0.8) 100%
+);

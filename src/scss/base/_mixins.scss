@@ -1,91 +1,14 @@
-@mixin subtitle {
-  font-weight: 900;
-  font-size: 28px;
-  line-height: 36px;
-}
-
-@mixin main {
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.15px;
-}
-
-@mixin subject {
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.1px;
-}
-
-@mixin title {
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 48px;
-  color: #fff;
-  letter-spacing: 0.2px;
-}
-
-@mixin text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-}
-
-@mixin mid {
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-}
-
-@mixin email {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.15px;
-}
-
-@mixin descr {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.25px;
-}
-
-@mixin price {
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-}
-
-@mixin more {
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.5px;
-}
-
-@mixin license {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.4px;
-}
-
 @mixin swiper-arrow-btn {
   width: 40px;
   height: 40px;
-  background-color: #fff;
+  background-color: $mono-b-500;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 24px 24px;
   transition: all 0.1s ease;
   //-параметр свечения окружности-//
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 2px 1px $mono-a-a200;
   &:after {
     font-family: none;
     content: "";

@@ -1,4 +1,4 @@
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
 }
 @media (max-width: 1200px) {
   .title {
@@ -437,9 +437,7 @@
       text-align: center;
     }
     &__text {
-      @include descr;
       color: #1f1f1e;
-      // color: #3389ba;
       font-size: 13px;
       line-height: 13px;
       display: block;

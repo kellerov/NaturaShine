@@ -1,16 +1,14 @@
 .subtitle {
-  @include subtitle;
-  color: $title-color;
+  color: $mono-a-a900;
 }
 
 .title {
-  @include title;
+  color: $mono-b-500;
   padding-top: 12px;
 }
 
 .text {
-  @include text;
-  color: $descr-color;
+  color: $mono-b-a900;
 }
 
 .swiper-container {
@@ -46,7 +44,7 @@
   width: 20px;
   height: 2px;
   display: inline-block;
-  background: rgba(0, 0, 0, 0.38);
+  background: $mono-a-a500;
   border-radius: 24px;
   &:hover {
     opacity: 1;

@@ -6,14 +6,17 @@ const swiper = new Swiper(".swiper-container", {
   loop: true,
   autoplay: true,
   disableOnInteraction: false,
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -24,15 +27,15 @@ const swiper = new Swiper(".swiper-container", {
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     992: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     1200: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     1440: {
@@ -65,14 +68,17 @@ const modified = new Swiper(".modified", {
   wrapperClass: "wrap",
   direction: "horizontal",
   loopFillGroupWithBlank: true,
+
   navigation: {
     nextEl: ".nxt",
     prevEl: ".prv",
   },
-  // pagination: {
-  //   el: ".page",
-  //   clickable: true,
-  // },
+
+  pagination: {
+    el: ".page",
+    clickable: true,
+  },
+
   breakpoints: {
     320: {
       slidesPerView: 1,
