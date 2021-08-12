@@ -65,6 +65,7 @@
   background: transparent;
   &:hover {
     box-shadow: 0 1px 5px rgb(0 0 0 / 30%);
-    background-color: $other-background-1;
+    background-color: $mono-a-a900;
+    color: $mono-b-500;
   }
 }

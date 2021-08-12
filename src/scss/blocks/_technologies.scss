@@ -1,6 +1,9 @@
 .technologies {
   &__wrapper {
     display: flex;
+    // display: grid;
+    // grid-gap: 24px 24px;
+    // grid-template-columns: repeat(auto-fit, minmax(625px, 1fr));
   }
   &__cooler {
     display: flex;
@@ -9,7 +12,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    min-width: 652px;
+    // min-width: 652px;
     border-radius: 6px;
     flex-basis: 50%;
 
@@ -30,11 +33,13 @@
   &__info {
     padding-left: 40px;
     padding-bottom: 30px;
-    width: 588px;
+    max-width: 588px;
   }
   &__box {
     flex-basis: 50%;
     padding-left: 24px;
+    // grid-gap: 24px;
+    // display: grid;
   }
   &__box-wrap:first-child {
     padding-bottom: 24px;

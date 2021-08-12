@@ -8,8 +8,11 @@
     justify-content: center;
     align-items: center;
     transition: all 0.1s ease;
+    width: 143px;
+    height: 40px;
     &:hover {
-      opacity: 0.6;
+      background-color: $mono-a-a50;
+      border-radius: 4px;
     }
   }
   &__link {
@@ -113,7 +116,7 @@
     position: relative;
     width: 67px;
     &:before {
-      border-bottom: 2px solid $warn;
+      border-bottom: 2px solid $warn-a800;
       position: absolute;
       content: "";
       width: 100%;

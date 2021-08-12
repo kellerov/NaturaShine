@@ -33,7 +33,6 @@
       }
     }
   }
-
   .advantages {
     &__subject {
       padding: 14px 0 4px 0;
@@ -46,7 +45,6 @@
       box-shadow: none;
     }
   }
-
   .technologies {
     .show {
       &__all {
@@ -57,19 +55,10 @@
     }
     &__wrapper {
       display: flex;
-      flex-direction: column;
-    }
-    &__box {
-      padding-left: 0;
-    }
-    &__oven-img {
-      padding: 2px 90px;
-    }
-    &__food-img {
-      width: 364px;
+      // flex-direction: column;
     }
     &__cooler {
-      margin-bottom: 24px;
+      margin-bottom: 0px;
     }
     &__info {
       padding-top: 65px;
@@ -84,9 +73,6 @@
         opacity: 1;
       }
     }
-    &__card {
-      text-align: center;
-    }
     &__descr {
       &:hover {
         opacity: 1;
@@ -96,16 +82,14 @@
       opacity: 1;
     }
     &__content-top {
-      padding: 35px 16px;
       flex-basis: 56%;
     }
   }
-
   .mailing img {
     margin-left: -70px;
   }
   .footer {
-    padding: 26px 0 62px;
+    // padding: 26px 0 62px;
     &__wrapper {
       flex-wrap: wrap;
     }
@@ -131,26 +115,26 @@
       display: flex;
       margin-top: 24px;
       align-items: center;
-      grid-gap: 0 24px;
+      grid-gap: 0 14px;
 
       display: grid;
       grid-template-areas:
         "header__logo menu"
         "search-box search-box"
         "menu__panel menu__panel";
-      grid-template-columns: 75% 1fr;
-      grid-template-rows: 45px 1fr;
+      grid-template-columns: 1fr;
+      grid-template-rows: 45px;
     }
     &__bottom {
       padding: 14px 0px 14px;
       grid-area: header__bottom;
+      text-align: center;
     }
     &__logo {
       padding-top: 5px;
       grid-area: header__logo;
     }
   }
-
   .search-box {
     // flex-grow: 1;
     grid-area: search-box;
@@ -169,15 +153,18 @@
       display: flex;
       align-items: center;
       grid-area: menu__panel;
+      justify-content: center;
+      flex-wrap: wrap;
     }
-    // &__left {
-    //   grid-area: menu__left;
-    // }
+    &__item {
+      padding-right: 14px;
+    }
     &__item:last-child {
       padding-right: 0px;
     }
     &__item_lower {
-      padding-right: 24px;
+      // padding-right: 24px;
+      padding: 0px 14px 8px 1px;
     }
     &__text {
       display: none;
@@ -199,8 +186,7 @@
   .swiper {
     .swiper-slide {
       &__content {
-        flex-basis: 55%;
-        margin-left: 135px;
+        margin-left: 8px;
       }
     }
     .swiper-pagination {
@@ -227,16 +213,74 @@
     }
   }
   .technologies {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    &__box {
+      display: flex;
+      flex-direction: column;
+    }
+    &__cooler {
+      margin-bottom: 24px;
+    }
+    &__box {
+      padding-left: 0px;
+    }
+    &__info {
+      padding-top: 45px;
+      padding-left: 14px;
+    }
+    &__card {
+      height: 100%;
+      display: grid;
+      grid-gap: 24px 24px;
+    }
     &__oven-img {
       padding: 2px 46px;
+      max-width: 341px;
+      height: 100%;
+      border-radius: 6px;
     }
     &__food-img {
-      width: 276px;
+      max-width: 276px;
+      height: 100%;
+      border-radius: 6px;
+    }
+    &__content-top {
+      padding: 24px;
+      border-radius: 6px;
     }
   }
+  input[name="email"] {
+    width: 255px;
+  }
   .mailing img {
-    margin-left: -119px;
-    top: 13%;
+    margin-left: -61px;
+    top: 15px;
+  }
+  .button_subscribe {
+    margin: 16px;
+  }
+  .footer {
+    &__wrapper {
+      justify-content: center;
+      text-align: center;
+    }
+    &__descr {
+      text-align: center;
+    }
+    .footer-info {
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .contacts {
+      text-align: center;
+      &__item {
+        padding-bottom: 45px;
+      }
+    }
   }
 }
 
