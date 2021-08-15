@@ -6,11 +6,23 @@
     transition: all 0.1s ease;
     &:hover {
       opacity: 0.6;
+      // width: 32px;
+      // height: 32px;
+      // border-radius: 4px;
+      // background: rgba(0, 0, 0, 0.04);
+      @media #{$mobile} {
+        opacity: 1;
+      }
     }
   }
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @media #{$mobile} {
+      justify-content: center;
+      text-align: center;
+    }
   }
   &__descr {
     color: $mono-a-a700;
@@ -18,8 +30,14 @@
     text-align: right;
     display: block;
     transition: all 0.1s ease;
+    @media #{$mobile} {
+      text-align: center;
+    }
     &:hover {
       color: rgba(0, 0, 0, 0.8);
+      @media #{$mobile} {
+        color: $mono-a-a700;
+      }
     }
   }
 }
@@ -30,6 +48,11 @@
 .footer-info {
   display: flex;
   justify-content: space-between;
+  @media #{$mobile} {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
 }
 
 .categories {
@@ -44,17 +67,26 @@
     color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.8);
+      @media #{$mobile} {
+        color: $mono-a-a700;
+      }
     }
   }
   &__link-main {
     color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.7);
+      @media #{$mobile} {
+        color: $mono-a-a700;
+      }
     }
   }
 }
 .clients {
   flex-basis: 63%;
+  @media #{$tablet} {
+    flex-basis: 18%;
+  }
   &__item {
     padding-bottom: 8px;
     &:first-child {
@@ -65,19 +97,31 @@
     color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.8);
+      @media #{$mobile} {
+        color: $mono-a-a700;
+      }
     }
   }
   &__link-main {
     color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.7);
+      @media #{$mobile} {
+        color: $mono-a-a700;
+      }
     }
   }
 }
 .contacts {
   text-align: right;
+  @media #{$mobile} {
+    text-align: center;
+  }
   &__item {
     padding-bottom: 108px;
+    @media #{$mobile} {
+      padding-bottom: 45px;
+    }
     &:first-child {
       padding-bottom: 16px;
     }
@@ -95,12 +139,18 @@
     color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.8);
+      @media #{$mobile} {
+        color: $mono-a-a700;
+      }
     }
   }
   &__link-main {
     color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.7);
+      @media #{$mobile} {
+        color: $mono-a-a700;
+      }
     }
   }
 }

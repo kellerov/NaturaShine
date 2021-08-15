@@ -8,11 +8,17 @@
     justify-content: center;
     align-items: center;
     transition: all 0.1s ease;
-    width: 143px;
-    height: 40px;
+    // width: 143px;
+    // height: 40px;
     &:hover {
-      background-color: $mono-a-a50;
-      border-radius: 4px;
+      // background-color: $mono-a-a50;
+      // border-radius: 4px;
+      opacity: 0.6;
+      @media #{$mobile} {
+        &:hover {
+          opacity: 1;
+        }
+      }
     }
   }
   &__link {
@@ -76,6 +82,9 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    @media #{$tablet} {
+      height: 160px;
+    }
   }
   &__item_text {
     padding-top: 20px;
@@ -88,6 +97,14 @@
     height: 48px;
     &:hover {
       opacity: 0.6;
+    }
+    @media #{$tablet} {
+      text-align: center;
+    }
+    @media #{$mobile} {
+      &:hover {
+        opacity: 1;
+      }
     }
   }
   &__item_elements {
@@ -128,6 +145,9 @@
 
 .button_mini {
   opacity: 0;
+  @media #{$mobile} {
+    opacity: 1;
+  }
   width: 48px;
   height: 48px;
   background: $primary-300;
@@ -141,6 +161,10 @@
   &:hover {
     box-shadow: 0 1px 7px rgb(0 0 0 / 30%);
     transform: translateY(-1px);
+    @media #{$mobile} {
+      box-shadow: none;
+      transform: none;
+    }
   }
   &:active {
     background-color: #3a95ca;
@@ -159,7 +183,18 @@
 
 .nxt {
   background-color: $mono-a-a75;
+  @media #{$mobile} {
+    display: none;
+  }
 }
 .page {
   display: none;
+}
+
+.card:hover {
+  @media #{$mobile} {
+    box-shadow: none;
+    background: none;
+    transition: none;
+  }
 }
