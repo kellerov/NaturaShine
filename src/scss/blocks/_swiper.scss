@@ -1,3 +1,6 @@
+.swiper {
+  position: relative;
+}
 .subtitle {
   color: $mono-a-a900;
 }
@@ -61,10 +64,15 @@
   }
 }
 
+.swiper-button-disabled {
+  display: none;
+}
+
 .swiper-button-prev {
   @include swiper-arrow-btn;
+  // top: 10%;
   background-image: url(../icons/icon_arrow_L.svg);
-  left: -20px;
+  left: -32px;
   transform: translate(50%, 50%);
   transition: all 0.1s ease;
   @media #{$mobile} {
@@ -77,8 +85,9 @@
 
 .swiper-button-next {
   @include swiper-arrow-btn;
+  // top: 10%;
   background-image: url(../icons/icon_arrow_R.svg);
-  right: 20px;
+  right: 10px;
   transform: translate(50%, 50%);
   transition: all 0.1s ease;
   @media #{$mobile} {

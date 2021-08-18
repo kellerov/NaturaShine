@@ -3,9 +3,9 @@
 const swiper = new Swiper(".swiper-container", {
   direction: "horizontal",
   slidesPerView: 1,
-  loop: true,
-  autoplay: true,
-  disableOnInteraction: false,
+  // loop: true,
+  // autoplay: true,
+  // disableOnInteraction: false,
 
   pagination: {
     el: ".swiper-pagination",
@@ -42,17 +42,17 @@ const swiper = new Swiper(".swiper-container", {
       slidesPerView: 1,
     },
   },
-  on: {
-    init() {
-      this.el.addEventListener("mouseenter", () => {
-        this.autoplay.stop();
-      });
+  // on: {
+  //   init() {
+  //     this.el.addEventListener("mouseenter", () => {
+  //       this.autoplay.stop();
+  //     });
 
-      this.el.addEventListener("mouseleave", () => {
-        this.autoplay.start();
-      });
-    },
-  },
+  //     this.el.addEventListener("mouseleave", () => {
+  //       this.autoplay.start();
+  //     });
+  //   },
+  // },
 });
 
 //-- Для второго слайда Catalog --//
@@ -61,9 +61,9 @@ const modified = new Swiper(".modified", {
   slidesPerView: 5,
   spaceBetween: 24,
   slidesPerGroup: 5,
-  loop: true,
-  autoplay: true,
-  disableOnInteraction: false,
+  // loop: true,
+  // autoplay: true,
+  // disableOnInteraction: false,
   slideClass: "card",
   wrapperClass: "wrap",
   direction: "horizontal",
@@ -107,17 +107,17 @@ const modified = new Swiper(".modified", {
       slidesPerView: 5,
     },
   },
-  on: {
-    init() {
-      this.el.addEventListener("mouseenter", () => {
-        this.autoplay.stop();
-      });
+  // on: {
+  //   init() {
+  //     this.el.addEventListener("mouseenter", () => {
+  //       this.autoplay.stop();
+  //     });
 
-      this.el.addEventListener("mouseleave", () => {
-        this.autoplay.start();
-      });
-    },
-  },
+  //     this.el.addEventListener("mouseleave", () => {
+  //       this.autoplay.start();
+  //     });
+  //   },
+  // },
 });
 
 //-- Menu hamburger --//

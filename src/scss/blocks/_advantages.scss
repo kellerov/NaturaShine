@@ -74,9 +74,5 @@
     background-color: $other-background-1;
     // background-color: $mono-a-a900;
     // color: $mono-b-500;
-    @media #{$mobile} {
-      background: none;
-      box-shadow: none;
-    }
   }
 }

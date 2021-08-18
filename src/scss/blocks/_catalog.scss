@@ -11,14 +11,9 @@
     // width: 143px;
     // height: 40px;
     &:hover {
+      opacity: 0.6;
       // background-color: $mono-a-a50;
       // border-radius: 4px;
-      opacity: 0.6;
-      @media #{$mobile} {
-        &:hover {
-          opacity: 1;
-        }
-      }
     }
   }
   &__link {
@@ -63,14 +58,15 @@
 }
 
 .catalog {
+  position: relative;
   &__content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
   &__item {
-    max-width: 100%;
-    height: 400px;
+    width: 100%;
+    // height: 400px;
     padding: 16px 16px;
     &:hover .button_mini {
       opacity: 1;
@@ -82,30 +78,26 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    @media #{$tablet} {
-      height: 160px;
-    }
+    // @media #{$tablet} {
+    //   height: 160px;
+    // }
   }
   &__item_text {
-    padding-top: 20px;
+    margin: 20px 0px 8px 0px;
+    // width: 221px;
   }
   &__item_link {
     color: $mono-a-a900;
     display: flex;
-    padding-bottom: 5px;
+    // padding-bottom: 5px;
     transition: all 0.1s ease;
     height: 48px;
     &:hover {
       opacity: 0.6;
     }
-    @media #{$tablet} {
-      text-align: center;
-    }
-    @media #{$mobile} {
-      &:hover {
-        opacity: 1;
-      }
-    }
+    // @media #{$tablet} {
+    //   text-align: center;
+    // }
   }
   &__item_elements {
     position: absolute;
@@ -117,9 +109,9 @@
   }
   &__item_footer {
     color: $mono-a-a900;
-    padding-top: 9px;
+    // padding-top: 9px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
   }
   &__item_price {
@@ -132,6 +124,7 @@
     color: $mono-a-a600;
     position: relative;
     width: 67px;
+    margin-bottom: 2px;
     &:before {
       border-bottom: 2px solid $warn-a800;
       position: absolute;
@@ -161,10 +154,6 @@
   &:hover {
     box-shadow: 0 1px 7px rgb(0 0 0 / 30%);
     transform: translateY(-1px);
-    @media #{$mobile} {
-      box-shadow: none;
-      transform: none;
-    }
   }
   &:active {
     background-color: #3a95ca;
@@ -177,24 +166,18 @@
   flex-shrink: 0;
 }
 
-.prv {
-  visibility: hidden;
-}
+// .prv {
+//   visibility: hidden;
+// }
 
-.nxt {
+.nxt,
+.prv {
   background-color: $mono-a-a75;
+  // top: 32%;
   @media #{$mobile} {
     display: none;
   }
 }
 .page {
   display: none;
-}
-
-.card:hover {
-  @media #{$mobile} {
-    box-shadow: none;
-    background: none;
-    transition: none;
-  }
 }

@@ -5,14 +5,13 @@
     display: flex;
     margin-top: 24px;
     align-items: center;
-    grid-gap: 0 24px;
+    gap: 0 24px;
     @media #{$mobile} {
-      grid-gap: 0 14px;
+      gap: 0 14px;
       display: grid;
       grid-template-areas:
-        "header__logo menu"
-        "search-box search-box"
-        "menu__panel menu__panel";
+        "logo menu"
+        "search-box search-box";
       grid-template-columns: 1fr;
       grid-template-rows: 45px;
     }
@@ -21,7 +20,6 @@
     padding: 14px 0px 14px;
     @media #{$mobile} {
       padding: 14px 0px 14px;
-      grid-area: header__bottom;
       text-align: center;
     }
   }
@@ -29,7 +27,7 @@
     padding-top: 5px;
     @media #{$mobile} {
       padding-top: 5px;
-      grid-area: header__logo;
+      grid-area: logo;
     }
   }
 }
@@ -117,9 +115,6 @@
       // border-radius: 4px;
       // width: 40px;
       // height: 40px;
-      @media #{$mobile} {
-        opacity: 1;
-      }
     }
   }
 }
