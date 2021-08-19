@@ -71,13 +71,6 @@
     position: absolute;
   }
 }
-.button_subscribe {
-  &:hover {
-    @media #{$mobile} {
-      box-shadow: none;
-    }
-  }
-}
 
 .menu {
   grid-area: menu;
