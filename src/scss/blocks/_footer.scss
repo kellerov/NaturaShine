@@ -32,9 +32,6 @@
     }
     &:hover {
       color: rgba(0, 0, 0, 0.8);
-      @media #{$mobile} {
-        color: $mono-a-a700;
-      }
     }
   }
 }
@@ -64,18 +61,12 @@
     color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.8);
-      @media #{$mobile} {
-        color: $mono-a-a700;
-      }
     }
   }
   &__link-main {
     color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.7);
-      @media #{$mobile} {
-        color: $mono-a-a700;
-      }
     }
   }
 }
@@ -94,18 +85,12 @@
     color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.8);
-      @media #{$mobile} {
-        color: $mono-a-a700;
-      }
     }
   }
   &__link-main {
     color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.7);
-      @media #{$mobile} {
-        color: $mono-a-a700;
-      }
     }
   }
 }
@@ -136,18 +121,12 @@
     color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.8);
-      @media #{$mobile} {
-        color: $mono-a-a700;
-      }
     }
   }
   &__link-main {
     color: $mono-a-a700;
     &:hover {
       color: rgba(0, 0, 0, 0.7);
-      @media #{$mobile} {
-        color: $mono-a-a700;
-      }
     }
   }
 }
