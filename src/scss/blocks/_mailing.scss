@@ -21,39 +21,49 @@
 }
 
 .search-box_mini {
-  position: relative;
-  top: 0;
-  left: 0;
-  img {
+  // img {
+  //   border: none;
+  //   left: 12px;
+  //   bottom: 17px;
+  //   position: absolute;
+  // }
+}
+
+.email {
+  &__wrapper {
+    display: inline-flex;
+    position: relative;
+  }
+  &__input {
+    width: 404px;
+    padding: 18px;
+    border: 2px solid $mono-a-a200;
+    border-radius: 4px;
+    background-color: $mono-b-500;
+    color: $mono-a-500;
+    outline: none;
+    transition: all 0.1s ease;
+    padding-left: 41px;
+    @media #{$mobile} {
+      width: 255px;
+    }
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.07);
+    }
+    &::placeholder {
+      color: $mono-a-a500;
+    }
+  }
+  &__img {
     border: none;
-    margin-left: -2px;
-    left: 30%;
-    bottom: 64%;
+    left: 12px;
+    bottom: 12px;
     position: absolute;
   }
-}
-
-.email input[type="text"] {
-  padding-left: 41px;
-}
-
-input[name="email"] {
-  color: $mono-a-a500;
-  width: 404px;
-  padding: 18px;
-  border: 1px solid $mono-a-a200;
-  border-radius: 4px;
-  background-color: $mono-b-500;
-  color: $mono-a-500;
-  outline: none;
-  transition: all 0.1s ease;
-  &:focus,
-  &:hover {
-    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.07);
-  }
-  &::placeholder {
-    color: $mono-a-a500;
-  }
+  // input[type="text"] {
+  //   padding-left: 41px;
+  // }
 }
 
 .button_subscribe {
@@ -64,8 +74,11 @@ input[name="email"] {
   cursor: pointer;
   background: $primary-300;
   color: $mono-b-500;
-  margin-left: 16px;
+  margin: 10px 0px 0px 10px;
   transition: all 0.1s ease;
+  // @media #{$mobile} {
+  //   margin-left: 0px;
+  // }
   &:hover,
   &:active {
     background: #3a95ca;

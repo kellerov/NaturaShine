@@ -1,3 +1,6 @@
+.swiper {
+  position: relative;
+}
 .subtitle {
   color: $mono-a-a900;
 }
@@ -29,6 +32,12 @@
   &__content {
     flex-basis: 30%;
     margin-left: 208px;
+    @media #{$tablet} {
+      flex-basis: 32%;
+    }
+    @media #{$mobile} {
+      margin-left: 8px;
+    }
   }
 }
 
@@ -38,6 +47,9 @@
   left: 0;
   top: 0;
   bottom: 10px;
+  @media #{$mobile} {
+    display: none;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -52,12 +64,20 @@
   }
 }
 
+.swiper-button-disabled {
+  display: none;
+}
+
 .swiper-button-prev {
   @include swiper-arrow-btn;
+  // top: 10%;
   background-image: url(../icons/icon_arrow_L.svg);
-  left: -25px;
+  left: -32px;
   transform: translate(50%, 50%);
   transition: all 0.1s ease;
+  @media #{$mobile} {
+    display: none;
+  }
   &:hover {
     box-shadow: 0 1px 10px rgb(0 0 0 / 30%);
   }
@@ -65,10 +85,14 @@
 
 .swiper-button-next {
   @include swiper-arrow-btn;
+  // top: 10%;
   background-image: url(../icons/icon_arrow_R.svg);
-  right: 15px;
+  right: 10px;
   transform: translate(50%, 50%);
   transition: all 0.1s ease;
+  @media #{$mobile} {
+    display: none;
+  }
   &:hover {
     box-shadow: 0 1px 10px rgb(0 0 0 / 30%);
   }
