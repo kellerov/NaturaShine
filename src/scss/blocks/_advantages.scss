@@ -37,8 +37,6 @@
     padding: 24px;
     display: grid;
     justify-content: center;
-    // grid-template-columns: repeat(auto-fill, 320px);
-    // grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     @media #{$tablet} {
       padding: 12px;
@@ -72,7 +70,5 @@
   &:hover {
     box-shadow: 0 1px 5px rgb(0 0 0 / 30%);
     background-color: $other-background-1;
-    // background-color: $mono-a-a900;
-    // color: $mono-b-500;
   }
 }

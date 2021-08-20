@@ -44,7 +44,6 @@
     font-size: 14px;
     line-height: 20px;
     padding: 10px;
-    // width: 997px;
     width: 100%;
     height: 40px;
     border: 2px solid $mono-a-a200;
@@ -104,17 +103,9 @@
     transition: all 0.1s ease;
     &:hover {
       opacity: 0.6;
-      // background-color: $mono-a-a50;
-      // border-radius: 4px;
-      // width: 40px;
-      // height: 40px;
     }
   }
 }
-
-// .hamburger {
-//   display: none;
-// }
 
 .shop-cart {
   text-align: center;

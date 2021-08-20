@@ -70,7 +70,6 @@
 
 .swiper-button-prev {
   @include swiper-arrow-btn;
-  // top: 10%;
   background-image: url(../icons/icon_arrow_L.svg);
   left: -32px;
   transform: translate(50%, 50%);
@@ -85,7 +84,6 @@
 
 .swiper-button-next {
   @include swiper-arrow-btn;
-  // top: 10%;
   background-image: url(../icons/icon_arrow_R.svg);
   right: 10px;
   transform: translate(50%, 50%);
