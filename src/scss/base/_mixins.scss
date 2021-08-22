@@ -1,16 +1,18 @@
 @mixin swiper-arrow-btn {
+  border-radius: 50%;
   width: 40px;
   height: 40px;
-  background-color: $mono-b-500;
-  border-radius: 50%;
-  background-repeat: no-repeat;
+  box-shadow: 0 0 2px 1px $mono-a-a200;
   background-position: center center;
   background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-color: $mono-b-500;
   transition: all 0.1s ease;
-  //-параметр свечения окружности-//
-  box-shadow: 0 0 2px 1px $mono-a-a200;
-  &:after {
-    font-family: none;
+
+  // параметр свечения окружности //
+
+  &::after {
     content: "";
+    font-family: none;
   }
 }

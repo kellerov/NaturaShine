@@ -8,38 +8,40 @@
       flex-direction: column;
     }
   }
+
   &__cooler {
-    display: flex;
     position: relative;
+    display: flex;
+    flex-basis: 50%;
+    border-radius: 6px;
     background-image: url("../images/bg_cooler.png");
-    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    border-radius: 6px;
-    flex-basis: 50%;
-    @media #{$tablet} {
-    }
-    @media #{$mobile} {
-      height: 400px;
-      flex-basis: auto;
-    }
-    &:before {
+    background-repeat: no-repeat;
+
+    &::before {
       content: "";
+      position: absolute;
+      border-radius: 6px;
       width: 100%;
       height: 100%;
       background: $gradient-overlay-d800;
-      position: absolute;
-      border-radius: 6px;
+    }
+    @media #{$mobile} {
+      flex-basis: auto;
+      height: 400px;
     }
   }
+
   &__content {
+    position: relative;
     display: flex;
     align-items: flex-end;
-    position: relative;
   }
+
   &__info {
-    padding-left: 40px;
     padding-bottom: 30px;
+    padding-left: 40px;
     max-width: 588px;
     @media #{$tablet} {
       padding-top: 65px;
@@ -50,6 +52,7 @@
       padding-left: 8px;
     }
   }
+
   &__box {
     flex-basis: 50%;
     margin-left: 24px;
@@ -59,24 +62,26 @@
       margin-left: 0px;
     }
   }
+
   &__box-wrap:first-child {
     margin-bottom: 24px;
   }
+
   &__card {
     display: flex;
   }
+
   &__oven {
     display: flex;
-    background: $secondary-2-300;
-    padding: 2px 71px;
     border-radius: 6px 0 0 6px;
-
-    background-image: url("../images/bg_oven.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
+    padding: 2px 71px;
     width: 326px;
     height: 188px;
+    background: $secondary-2-300;
+    background-image: url("../images/bg_oven.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
     @media #{$tablet} {
       width: 150px;
     }
@@ -89,15 +94,13 @@
 
   &__food {
     display: flex;
+    border-radius: 6px 0 0 6px;
     width: 326px;
     height: 188px;
-    display: block;
-    border-radius: 6px 0 0 6px;
-
     background-image: url("../images/bg_food.png");
-    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
     @media #{$tablet} {
       width: 150px;
     }
@@ -106,13 +109,14 @@
       height: 100%;
     }
   }
+
   &__content-top {
-    padding: 16px;
-    background: $other-background-2;
+    flex-basis: 50%;
     border: 2px solid rgba(0, 0, 0, 0.04);
     border-left: none;
     border-radius: 0 6px 6px 0;
-    flex-basis: 50%;
+    padding: 16px;
+    background: $other-background-2;
     @media #{$tablet} {
       flex-basis: 76%;
     }
@@ -120,35 +124,45 @@
       flex-basis: 86%;
     }
   }
+
   &__descr {
     color: $mono-a-a800;
+
     &:hover {
       opacity: 0.7;
     }
   }
+
   &__descr_white {
     color: $mono-b-a900;
+
     &:hover {
       opacity: 0.9;
     }
   }
+
   &__subtitle {
-    padding: 4px 0 4px 0;
+    padding: 4px 0;
     color: $mono-b-500;
+
     &:hover {
       opacity: 0.9;
     }
   }
+
   &__subtitle-mid {
-    color: $mono-a-a900;
-    padding-top: 8px;
     display: block;
+    padding-top: 8px;
+    color: $mono-a-a900;
+
     &:hover {
       opacity: 0.7;
     }
   }
+
   &__text {
     color: $mono-b-500;
+
     &:hover {
       opacity: 0.9;
     }

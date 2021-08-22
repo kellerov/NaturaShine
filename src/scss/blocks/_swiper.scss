@@ -1,13 +1,14 @@
 .swiper {
   position: relative;
 }
+
 .subtitle {
   color: $mono-a-a900;
 }
 
 .title {
-  color: $mono-b-500;
   padding-top: 12px;
+  color: $mono-b-500;
 }
 
 .text {
@@ -21,14 +22,15 @@
 
 .swiper-slide {
   & > div {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    min-height: 380px;
-    border-radius: 6px;
     display: flex;
     align-items: center;
+    border-radius: 6px;
+    min-height: 380px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
+
   &__content {
     flex-basis: 30%;
     margin-left: 208px;
@@ -43,21 +45,22 @@
 
 .swiper-pagination {
   position: relative;
-  width: 100%;
   left: 0;
   top: 0;
   bottom: 10px;
+  width: 100%;
   @media #{$mobile} {
     display: none;
   }
 }
 
 .swiper-pagination-bullet {
+  display: inline-block;
+  border-radius: 24px;
   width: 20px;
   height: 2px;
-  display: inline-block;
   background: $mono-a-a500;
-  border-radius: 24px;
+
   &:hover {
     opacity: 1;
     transition: all 0.1s ease;
@@ -70,28 +73,32 @@
 
 .swiper-button-prev {
   @include swiper-arrow-btn;
-  background-image: url(../icons/icon_arrow_L.svg);
+
   left: -32px;
+  background-image: url("../icons/icon_arrow_L.svg");
   transform: translate(50%, 50%);
   transition: all 0.1s ease;
-  @media #{$mobile} {
-    display: none;
-  }
+
   &:hover {
     box-shadow: 0 1px 10px rgb(0 0 0 / 30%);
+  }
+  @media #{$mobile} {
+    display: none;
   }
 }
 
 .swiper-button-next {
   @include swiper-arrow-btn;
-  background-image: url(../icons/icon_arrow_R.svg);
+
   right: 10px;
+  background-image: url("../icons/icon_arrow_R.svg");
   transform: translate(50%, 50%);
   transition: all 0.1s ease;
-  @media #{$mobile} {
-    display: none;
-  }
+
   &:hover {
     box-shadow: 0 1px 10px rgb(0 0 0 / 30%);
+  }
+  @media #{$mobile} {
+    display: none;
   }
 }

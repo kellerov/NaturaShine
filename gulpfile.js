@@ -8,6 +8,39 @@ const uglify = require("gulp-uglify-es").default;
 const imagemin = require("gulp-imagemin");
 const del = require("del");
 const rename = require("gulp-rename");
+const gulpStylelint = require("gulp-stylelint");
+const prettier = require("gulp-prettier");
+const eslint = require("gulp-eslint");
+const prettierEslint = require("gulp-prettier-eslint");
+
+gulp.task("eslint", function Eslint() {
+  return src("src/js/**/*.js")
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError());
+});
+
+gulp.task("prettierEslint", function PrettierEslint() {
+  gulp.src("src/js/main.js").pipe(prettierEslint()).pipe(gulp.dest("./dist"));
+});
+
+function format() {
+  return src("src/main.js")
+    .pipe(prettier({ singleQuote: true }))
+    .pipe(dest("dist"));
+}
+
+function validate() {
+  return src("dist/js/main.js").pipe(prettier.check({ singleQuote: true }));
+}
+
+gulp.task("lint-css", function lintCssTask() {
+  return gulp.src("src/scss/blocks/**/*.+(scss|sass)").pipe(
+    gulpStylelint({
+      reporters: [{ formatter: "string", console: true }],
+    })
+  );
+});
 
 gulp.task("server", function () {
   browserSync({
@@ -18,20 +51,29 @@ gulp.task("server", function () {
 });
 
 gulp.task("style", function () {
-  return gulp
-    .src("src/scss/blocks/**/*.+(scss|sass)")
-    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
-    .pipe(rename({ suffix: ".min", prefix: "" }))
-    .pipe(
-      autoprefixer({
-        overrideBrowserslist: ["last 2 version"],
-        grid: true,
-      })
-    )
-    .pipe(concat("style.min.css"))
-    .pipe(cleanCSS({ compatibility: "ie10" }))
-    .pipe(gulp.dest("src/css"))
-    .pipe(browserSync.stream());
+  return (
+    gulp
+      .src("src/scss/blocks/**/*.+(scss|sass)")
+
+      // .pipe(
+      //   gulpStylelint({
+      //     reporters: [{ formatter: "string", console: true }],
+      //   })
+      // )
+
+      .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+      .pipe(rename({ suffix: ".min", prefix: "" }))
+      .pipe(
+        autoprefixer({
+          overrideBrowserslist: ["last 2 version"],
+          grid: true,
+        })
+      )
+      .pipe(concat("style.min.css"))
+      .pipe(cleanCSS({ compatibility: "ie10" }))
+      .pipe(gulp.dest("src/css"))
+      .pipe(browserSync.stream())
+  );
 });
 
 gulp.task("script", function () {

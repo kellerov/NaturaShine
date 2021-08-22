@@ -1,128 +1,156 @@
 .footer {
   padding: 48px 0px 40px;
   background: $secondary-1-300;
+
   &__social_item {
     padding: 0 8px;
     transition: all 0.1s ease;
+
     &:hover {
       opacity: 0.6;
     }
   }
+
   &__wrapper {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     @media #{$mobile} {
       justify-content: center;
       text-align: center;
     }
   }
+
   &__descr {
-    color: $mono-a-a700;
+    display: block;
     padding-top: 8px;
     text-align: right;
-    display: block;
+    color: $mono-a-a700;
     transition: all 0.1s ease;
-    @media #{$mobile} {
-      text-align: center;
-    }
+
     &:hover {
       color: rgba(0, 0, 0, 0.8);
     }
+    @media #{$mobile} {
+      text-align: center;
+    }
   }
 }
+
 .divider {
+  margin: 24px 0;
   border: 1px solid $mono-a-a75;
-  margin: 24px 0 24px 0;
 }
+
 .footer-info {
   display: flex;
   justify-content: space-between;
   @media #{$mobile} {
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
   }
 }
 
 .categories {
   transition: all 0.1s ease;
+
   &__item {
     padding-bottom: 8px;
+
     &:first-child {
       padding-bottom: 16px;
     }
   }
+
   &__link {
     color: $mono-a-a700;
+
     &:hover {
       color: rgba(0, 0, 0, 0.8);
     }
   }
+
   &__link-main {
     color: $mono-a-a700;
+
     &:hover {
       color: rgba(0, 0, 0, 0.7);
     }
   }
 }
+
 .clients {
   flex-basis: 63%;
+
+  &__item {
+    padding-bottom: 8px;
+
+    &:first-child {
+      padding-bottom: 16px;
+    }
+  }
+
+  &__link {
+    color: $mono-a-a700;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  &__link-main {
+    color: $mono-a-a700;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
   @media #{$tablet} {
     flex-basis: 18%;
   }
+}
+
+.contacts {
+  text-align: right;
+
   &__item {
-    padding-bottom: 8px;
+    padding-bottom: 108px;
+
     &:first-child {
       padding-bottom: 16px;
     }
-  }
-  &__link {
-    color: $mono-a-a700;
-    &:hover {
-      color: rgba(0, 0, 0, 0.8);
-    }
-  }
-  &__link-main {
-    color: $mono-a-a700;
-    &:hover {
-      color: rgba(0, 0, 0, 0.7);
-    }
-  }
-}
-.contacts {
-  text-align: right;
-  @media #{$mobile} {
-    text-align: center;
-  }
-  &__item {
-    padding-bottom: 108px;
     @media #{$mobile} {
       padding-bottom: 45px;
     }
-    &:first-child {
-      padding-bottom: 16px;
-    }
   }
+
   &__item-img {
     content: "";
+    margin-left: 8px;
+    border-radius: 4px;
+    padding: 4px;
     width: 48px;
     height: 32px;
     background: rgba(0, 0, 0, 0.04);
-    border-radius: 4px;
-    padding: 4px;
-    margin-left: 8px;
   }
+
   &__link-phone {
     color: $mono-a-a700;
+
     &:hover {
       color: rgba(0, 0, 0, 0.8);
     }
   }
+
   &__link-main {
     color: $mono-a-a700;
+
     &:hover {
       color: rgba(0, 0, 0, 0.7);
     }
+  }
+  @media #{$mobile} {
+    text-align: center;
   }
 }

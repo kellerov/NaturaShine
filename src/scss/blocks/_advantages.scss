@@ -1,57 +1,66 @@
 .advantages {
   &__background {
-    background: $secondary-1-300;
+    margin: 47px 0 67px;
     border-radius: 6px;
-    margin: 47px 0 67px 0;
+    background: $secondary-1-300;
   }
+
   &__content {
-    text-align: center;
     padding-top: 56px;
+    text-align: center;
   }
+
   &__subtitle {
     padding-bottom: 8px;
     color: $mono-a-a900;
   }
+
   &__text {
     color: $mono-a-a700;
   }
+
   &__subject {
+    padding: 12px 0 4px;
     color: $mono-a-a900;
-    padding: 12px 0 4px 0;
     @media #{$tablet} {
-      padding: 14px 0 4px 0;
+      padding: 14px 0 4px;
     }
   }
+
   &__descr {
-    color: $mono-a-a600;
     padding-bottom: 16px;
+    color: $mono-a-a600;
   }
+
   &__wrapper {
-    height: 248px;
     display: flex;
-    justify-content: space-around;
-    text-align: center;
     align-items: center;
+    justify-content: space-around;
+    height: 248px;
+    text-align: center;
   }
+
   &__services {
-    padding: 24px;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    padding: 24px;
     @media #{$tablet} {
       padding: 12px;
     }
   }
+
   &__icon {
-    height: 64px;
-    width: 64px;
-    margin: 0 auto;
     display: flex;
-    border-radius: 32px;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    border-radius: 32px;
+    width: 64px;
+    height: 64px;
     background: $other-background;
   }
+
   img {
     width: 36px;
     height: 38px;
@@ -59,14 +68,15 @@
 }
 
 .button_more {
-  color: $mono-a-a700;
-  width: 109px;
-  height: 40px;
-  cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  transition: all 0.1s ease;
+  width: 109px;
+  height: 40px;
+  color: $mono-a-a700;
   background: transparent;
+  transition: all 0.1s ease;
+  cursor: pointer;
+
   &:hover {
     box-shadow: 0 1px 5px rgb(0 0 0 / 30%);
     background-color: $other-background-1;
