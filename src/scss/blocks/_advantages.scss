@@ -1,8 +1,8 @@
 .advantages {
   &__background {
     margin: 47px 0 67px;
-    border-radius: 6px;
     background: $secondary-1-300;
+    border-radius: 6px;
   }
 
   &__content {
@@ -42,8 +42,8 @@
 
   &__services {
     display: grid;
-    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    justify-content: center;
     padding: 24px;
     @media #{$tablet} {
       padding: 12px;
@@ -54,11 +54,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    border-radius: 32px;
     width: 64px;
     height: 64px;
+    margin: 0 auto;
     background: $other-background;
+    border-radius: 32px;
   }
 
   img {
@@ -68,17 +68,17 @@
 }
 
 .button_more {
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
   width: 109px;
   height: 40px;
   color: $mono-a-a700;
-  background: transparent;
-  transition: all 0.1s ease;
   cursor: pointer;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  transition: all 0.1s ease;
 
   &:hover {
-    box-shadow: 0 1px 5px rgb(0 0 0 / 30%);
     background-color: $other-background-1;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 30%);
   }
 }

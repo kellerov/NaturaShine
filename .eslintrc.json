@@ -1,8 +1,16 @@
 {
   "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier"],
+  "plugins": ["autofix", "prettier"],
+  // "parser": "babel-eslint",
+  // "parserOptions": {
+  //   "ecmaFeatures": {
+  //     "jsx": true
+  //   }
+  // },
   "rules": {
     "no-unused-vars": "warn",
-    "typeof": false
+    "typeof": false,
+    "autofix/no-debugger": "error",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
   }
 }

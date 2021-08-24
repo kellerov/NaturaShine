@@ -24,8 +24,8 @@
   &__descr {
     display: block;
     padding-top: 8px;
-    text-align: right;
     color: $mono-a-a700;
+    text-align: right;
     transition: all 0.1s ease;
 
     &:hover {
@@ -126,13 +126,13 @@
   }
 
   &__item-img {
-    content: "";
-    margin-left: 8px;
-    border-radius: 4px;
-    padding: 4px;
     width: 48px;
     height: 32px;
+    padding: 4px;
+    margin-left: 8px;
+    content: "";
     background: rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
   }
 
   &__link-phone {

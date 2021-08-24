@@ -1,13 +1,13 @@
 .mailing {
   &__content {
-    margin: 56px 0;
     padding: 56px 0;
+    margin: 56px 0;
     text-align: center;
   }
 
   &__background {
-    border-radius: 6px;
     background: $secondary-1-300;
+    border-radius: 6px;
   }
 
   &__text {
@@ -17,8 +17,8 @@
 
   &__license {
     padding-top: 24px;
-    text-align: center;
     color: $mono-a-a500;
+    text-align: center;
   }
 }
 
@@ -29,14 +29,14 @@
   }
 
   &__input {
-    outline: none;
-    border: 2px solid $mono-a-a200;
-    border-radius: 4px;
+    width: 404px;
     padding: 18px;
     padding-left: 41px;
-    width: 404px;
     color: $mono-a-500;
     background-color: $mono-b-500;
+    border: 2px solid $mono-a-a200;
+    border-radius: 4px;
+    outline: none;
     transition: all 0.1s ease;
 
     &::placeholder {
@@ -54,26 +54,26 @@
 
   &__img {
     position: absolute;
-    left: 12px;
     bottom: 12px;
+    left: 12px;
     border: none;
   }
 }
 
 .button_subscribe {
-  margin: 10px 0px 0px 10px;
-  border: none;
-  border-radius: 4px;
   width: 132px;
   height: 56px;
+  margin: 10px 0px 0px 10px;
   color: $mono-b-500;
-  background: $primary-300;
-  transition: all 0.1s ease;
   cursor: pointer;
+  background: $primary-300;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.1s ease;
 
   &:hover,
   &:active {
-    box-shadow: 0 1px 4px rgb(0 0 0 / 30%);
     background: #3a95ca;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 30%);
   }
 }

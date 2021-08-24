@@ -14,33 +14,46 @@ const eslint = require("gulp-eslint");
 const prettierEslint = require("gulp-prettier-eslint");
 
 gulp.task("eslint", function Eslint() {
-  return src("src/js/**/*.js")
+  return gulp
+    .src("src/js/*.js")
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
 });
 
 gulp.task("prettierEslint", function PrettierEslint() {
-  gulp.src("src/js/main.js").pipe(prettierEslint()).pipe(gulp.dest("./dist"));
+  gulp.src("src/**/*.js").pipe(prettierEslint()).pipe(gulp.dest("./dist"));
 });
 
 function format() {
-  return src("src/main.js")
+  return gulp
+    .src("src/**/*.js")
     .pipe(prettier({ singleQuote: true }))
     .pipe(dest("dist"));
 }
 
 function validate() {
-  return src("dist/js/main.js").pipe(prettier.check({ singleQuote: true }));
+  return gulp.src("dist/**/*.js").pipe(prettier.check({ singleQuote: true }));
 }
 
-gulp.task("lint-css", function lintCssTask() {
+gulp.task("lint", function lintCssTask() {
   return gulp.src("src/scss/blocks/**/*.+(scss|sass)").pipe(
     gulpStylelint({
       reporters: [{ formatter: "string", console: true }],
     })
   );
 });
+
+// gulp.task("fix-css", function fixCssTask() {
+//   return gulp
+//     .src("src/scss/blocks/**/*.+(scss|sass)")
+//     .pipe(
+//       gulpStylelint({
+//         fix: true,
+//       })
+//     )
+//     .pipe(gulp.dest("src"));
+// });
 
 gulp.task("server", function () {
   browserSync({
@@ -131,7 +144,7 @@ gulp.task("icons", function () {
     .pipe(gulp.dest("dist/icons"));
 });
 
-gulp.task("del", async function () {
+gulp.task("del", function () {
   return del.sync("dist");
 });
 

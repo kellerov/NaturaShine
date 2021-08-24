@@ -28,21 +28,21 @@
 
 .modified {
   z-index: 1;
-  list-style: none;
-  overflow: hidden;
+  width: 100%;
+  padding: 0;
   margin-right: auto;
   margin-left: auto;
-  padding: 0;
-  width: 100%;
+  overflow: hidden;
+  list-style: none;
 }
 
 .wrap {
   position: relative;
   z-index: 1;
+  box-sizing: content-box;
   display: flex;
   width: 100%;
   height: 100%;
-  box-sizing: content-box;
   transition-property: transform;
 }
 
@@ -50,10 +50,12 @@
   flex-shrink: 0;
 
   &:hover {
-    border-radius: 6px;
-    box-shadow: 0px -0.5px 2px 1px rgba(0, 0, 0, 0.02),
-      0px 4px 8px rgba(0, 0, 0, 0.03), 0px 12px 24px rgba(0, 0, 0, 0.08);
     background: $mono-b-500;
+    border-radius: 6px;
+    box-shadow:
+      0px -0.5px 2px 1px rgba(0, 0, 0, 0.02),
+      0px 4px 8px rgba(0, 0, 0, 0.03),
+      0px 12px 24px rgba(0, 0, 0, 0.08);
     transition: all 0.2s ease;
   }
 }
@@ -68,8 +70,8 @@
   }
 
   &__item {
-    padding: 16px;
     width: 100%;
+    padding: 16px;
 
     &:hover .button_mini {
       opacity: 1;
@@ -79,9 +81,9 @@
   &__item_img {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-    height: 221px;
     max-width: 100%;
+    height: 221px;
+    margin: 0 auto;
   }
 
   &__item_text {
@@ -101,8 +103,8 @@
 
   &__item_elements {
     position: absolute;
-    right: 20px;
     top: 15px;
+    right: 20px;
     display: flex;
     flex-direction: column;
     height: 64px;
@@ -125,16 +127,16 @@
 
   &__item_old-price {
     position: relative;
-    margin-bottom: 2px;
     width: 67px;
+    margin-bottom: 2px;
     color: $mono-a-a600;
 
     &::before {
-      content: "";
       position: absolute;
-      border-bottom: 2px solid $warn-a800;
       width: 100%;
       height: 40%;
+      content: "";
+      border-bottom: 2px solid $warn-a800;
       transform: matrix(0.99, -0.06, 0.11, 1, 0, 0);
     }
   }
@@ -144,14 +146,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
-  border-radius: 6px;
   width: 48px;
   height: 48px;
+  cursor: pointer;
   background: $primary-300;
+  border: none;
+  border-radius: 6px;
   opacity: 0;
   transition: all 0.1s ease;
-  cursor: pointer;
 
   &:hover {
     box-shadow: 0 1px 7px rgb(0 0 0 / 30%);

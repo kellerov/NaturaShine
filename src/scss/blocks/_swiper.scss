@@ -24,11 +24,11 @@
   & > div {
     display: flex;
     align-items: center;
-    border-radius: 6px;
     min-height: 380px;
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;
+    border-radius: 6px;
   }
 
   &__content {
@@ -45,9 +45,9 @@
 
 .swiper-pagination {
   position: relative;
-  left: 0;
   top: 0;
   bottom: 10px;
+  left: 0;
   width: 100%;
   @media #{$mobile} {
     display: none;
@@ -56,10 +56,10 @@
 
 .swiper-pagination-bullet {
   display: inline-block;
-  border-radius: 24px;
   width: 20px;
   height: 2px;
   background: $mono-a-a500;
+  border-radius: 24px;
 
   &:hover {
     opacity: 1;
@@ -76,8 +76,8 @@
 
   left: -32px;
   background-image: url("../icons/icon_arrow_L.svg");
-  transform: translate(50%, 50%);
   transition: all 0.1s ease;
+  transform: translate(50%, 50%);
 
   &:hover {
     box-shadow: 0 1px 10px rgb(0 0 0 / 30%);
@@ -92,8 +92,8 @@
 
   right: 10px;
   background-image: url("../icons/icon_arrow_R.svg");
-  transform: translate(50%, 50%);
   transition: all 0.1s ease;
+  transform: translate(50%, 50%);
 
   &:hover {
     box-shadow: 0 1px 10px rgb(0 0 0 / 30%);
