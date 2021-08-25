@@ -4,8 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "fix-code": "prettier-eslint --write 'src/js/**/*.{js,jsx}' ",
-    "fix-styles": "prettier-stylelint --write 'src/js/**/*.{css,scss}' "
+    "eslint": "eslint 'src/js/main.js' --fix",
+    "stylelint": "stylelint 'src/scss/**/*.scss' --fix",
+    "lint": "npm run eslint && npm run stylelint"
   },
   "author": "",
   "license": "ISC",

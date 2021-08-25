@@ -1,25 +1,27 @@
 .header {
-  margin-bottom: 26px;
   border-bottom: 1px solid $mono-a-a100;
+  margin-bottom: 26px;
 
   &__top {
+    align-items: center;
     display: flex;
     gap: 0 24px;
-    align-items: center;
     margin-top: 24px;
+
     @media #{$mobile} {
       display: grid;
+      gap: 0 14px;
       grid-template-areas:
         "logo menu"
         "search-box search-box";
-      grid-template-rows: 45px;
       grid-template-columns: 1fr;
-      gap: 0 14px;
+      grid-template-rows: 45px;
     }
   }
 
   &__bottom {
     padding: 14px 0px;
+
     @media #{$mobile} {
       padding: 14px 0px;
       text-align: center;
@@ -28,6 +30,7 @@
 
   &__logo {
     padding-top: 5px;
+
     @media #{$mobile} {
       grid-area: logo;
       padding-top: 5px;
@@ -36,23 +39,23 @@
 }
 
 .search-box {
+  flex-grow: 1;
+  left: 0;
   position: relative;
   top: 0;
-  left: 0;
-  flex-grow: 1;
 
   &__input {
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    font-size: 14px;
-    line-height: 20px;
-    color: $mono-a-500;
     background-color: transparent;
     border: 2px solid $mono-a-a200;
     border-radius: 4px;
+    color: $mono-a-500;
+    font-size: 14px;
+    height: 40px;
+    line-height: 20px;
     outline: none;
+    padding: 10px;
     transition: all 0.1s ease;
+    width: 100%;
 
     &::placeholder {
       color: $mono-a-a500;
@@ -65,14 +68,15 @@
   }
 
   &__submit {
-    position: absolute;
-    width: 32px;
-    height: 39px;
-    margin-left: -36px;
-    cursor: pointer;
     background: url("../icons/icon_serch.svg") center center no-repeat;
     border: none;
+    cursor: pointer;
+    height: 39px;
+    margin-left: -36px;
+    position: absolute;
+    width: 32px;
   }
+
   @media #{$mobile} {
     grid-area: search-box;
   }
@@ -82,17 +86,19 @@
   grid-area: menu;
 
   &__panel {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+
     @media #{$mobile} {
       grid-area: menu__panel;
     }
   }
 
   &__item {
-    position: relative;
     margin-right: 20px;
+    position: relative;
+
     @media #{$mobile} {
       margin-right: 14px;
 
@@ -105,6 +111,7 @@
   &__item_lower {
     padding-right: 24px;
     white-space: nowrap;
+
     @media #{$mobile} {
       padding: 0px 14px 8px 1px;
     }
@@ -121,40 +128,40 @@
 }
 
 .shop-cart {
-  position: absolute;
-  top: -7px;
-  right: -8px;
-  z-index: 1140;
   display: inline-block;
+  position: absolute;
+  right: -8px;
   text-align: center;
+  top: -7px;
+  z-index: 1140;
 
   &__white-wrapper {
-    z-index: 1140;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
     background: $mono-b-500;
     border-radius: 30px;
+    cursor: pointer;
+    height: 20px;
     transition: all 0.2s ease-out;
+    width: 20px;
+    z-index: 1140;
   }
 
   &__counter-wrapper {
-    position: relative;
-    top: 2px;
-    right: -2px;
-    z-index: 1150;
-    width: 16px;
-    height: 16px;
-    color: $mono-b-500;
-    cursor: pointer;
     background: $primary-300;
     border-radius: 40px;
+    color: $mono-b-500;
+    cursor: pointer;
+    height: 16px;
+    position: relative;
+    right: -2px;
+    top: 2px;
+    width: 16px;
+    z-index: 1150;
   }
 
   &__count {
     display: flex;
-    justify-content: center;
     font-size: 10px;
+    justify-content: center;
     line-height: 16px;
   }
 }

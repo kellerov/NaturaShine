@@ -10,13 +10,13 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
   background: linear-gradient(0deg, #fcfcfa, #fcfcfa), #f5f7fa;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -26,8 +26,8 @@ a {
 ul,
 li {
   display: block;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -36,22 +36,22 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .container {
-  position: relative;
+  margin: 0 auto;
   max-width: 1358px;
   padding: 0 15px;
-  margin: 0 auto;
+  position: relative;
 }
 
 .title {
   font-size: 40px;
   font-weight: 900;
-  line-height: 48px;
   letter-spacing: 0.2px;
+  line-height: 48px;
 }
 
 .subtitle {
@@ -63,62 +63,62 @@ h6 {
 .body-100 {
   font-size: 14px;
   font-weight: 400;
-  line-height: 20px;
   letter-spacing: 0.25px;
+  line-height: 20px;
 }
 
 .body-200 {
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
   letter-spacing: 0.5px;
+  line-height: 24px;
 }
 
 .body-300 {
   font-size: 16px;
   font-weight: 900;
-  line-height: 24px;
   letter-spacing: 0.5px;
+  line-height: 24px;
 }
 
 .caption {
   font-size: 12px;
   font-weight: 400;
-  line-height: 16px;
   letter-spacing: 0.4px;
+  line-height: 16px;
 }
 
 .typography {
   font-size: 14px;
   font-weight: 900;
-  line-height: 16px;
   letter-spacing: 0.5px;
+  line-height: 16px;
 }
 
 .price {
   font-size: 20px;
   font-weight: 900;
-  line-height: 24px;
   letter-spacing: 0.2px;
+  line-height: 24px;
 }
 
 .subject {
   font-size: 18px;
   font-weight: 900;
-  line-height: 28px;
   letter-spacing: 0.1px;
+  line-height: 28px;
 }
 
 .main {
   font-size: 18px;
   font-weight: 900;
-  line-height: 24px;
   letter-spacing: 0.15px;
+  line-height: 24px;
 }
 
 .email {
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
   letter-spacing: 0.15px;
+  line-height: 20px;
 }

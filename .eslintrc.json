@@ -1,16 +1,21 @@
 {
-  "extends": ["airbnb", "prettier"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+
+  "globals": {
+    "swiper": "writable",
+    "Swiper": "readonly"
+  },
+
+  "extends": ["eslint:recommended", "airbnb", "prettier"],
   "plugins": ["autofix", "prettier"],
-  // "parser": "babel-eslint",
-  // "parserOptions": {
-  //   "ecmaFeatures": {
-  //     "jsx": true
-  //   }
-  // },
+
   "rules": {
-    "no-unused-vars": "warn",
-    "typeof": false,
-    "autofix/no-debugger": "error",
-    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+    "typeof": 0,
+    "no-unused-vars": "off",
+    "autofix/no-debugger": "error"
   }
 }

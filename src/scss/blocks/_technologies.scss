@@ -1,32 +1,35 @@
 .technologies {
   &__wrapper {
     display: flex;
+
     @media #{$tablet} {
       flex-direction: row;
     }
+
     @media #{$mobile} {
       flex-direction: column;
     }
   }
 
   &__cooler {
-    position: relative;
-    display: flex;
-    flex-basis: 50%;
-    border-radius: 6px;
     background-image: url("../images/bg_cooler.png");
     background-position: center center;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+    display: flex;
+    flex-basis: 50%;
+    position: relative;
 
     &::before {
-      content: "";
-      position: absolute;
-      border-radius: 6px;
-      width: 100%;
-      height: 100%;
       background: $gradient-overlay-d800;
+      border-radius: 6px;
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: 100%;
     }
+
     @media #{$mobile} {
       flex-basis: auto;
       height: 400px;
@@ -34,32 +37,35 @@
   }
 
   &__content {
-    position: relative;
-    display: flex;
     align-items: flex-end;
+    display: flex;
+    position: relative;
   }
 
   &__info {
+    max-width: 588px;
     padding-bottom: 30px;
     padding-left: 40px;
-    max-width: 588px;
+
     @media #{$tablet} {
-      padding-top: 65px;
       padding-left: 16px;
+      padding-top: 65px;
     }
+
     @media #{$mobile} {
-      padding-top: 45px;
       padding-left: 8px;
+      padding-top: 45px;
     }
   }
 
   &__box {
     flex-basis: 50%;
     margin-left: 24px;
+
     @media #{$mobile} {
       flex-direction: column;
-      margin-top: 24px;
       margin-left: 0px;
+      margin-top: 24px;
     }
   }
 
@@ -72,54 +78,60 @@
   }
 
   &__oven {
-    display: flex;
-    border-radius: 6px 0 0 6px;
-    padding: 2px 71px;
-    width: 326px;
-    height: 188px;
     background: $secondary-2-300;
     background-image: url("../images/bg_oven.png");
     background-position: center center;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 6px 0 0 6px;
+    display: flex;
+    height: 188px;
+    padding: 2px 71px;
+    width: 326px;
+
     @media #{$tablet} {
       width: 150px;
     }
+
     @media #{$mobile} {
+      height: 100%;
       padding: 0px;
       width: 120px;
-      height: 100%;
     }
   }
 
   &__food {
-    display: flex;
-    border-radius: 6px 0 0 6px;
-    width: 326px;
-    height: 188px;
     background-image: url("../images/bg_food.png");
     background-position: center center;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px 0 0 6px;
+    display: flex;
+    height: 188px;
+    width: 326px;
+
     @media #{$tablet} {
       width: 150px;
     }
+
     @media #{$mobile} {
-      width: 120px;
       height: 100%;
+      width: 120px;
     }
   }
 
   &__content-top {
-    flex-basis: 50%;
+    background: $other-background-2;
     border: 2px solid rgba(0, 0, 0, 0.04);
     border-left: none;
     border-radius: 0 6px 6px 0;
+    flex-basis: 50%;
     padding: 16px;
-    background: $other-background-2;
+
     @media #{$tablet} {
       flex-basis: 76%;
     }
+
     @media #{$mobile} {
       flex-basis: 86%;
     }
@@ -142,8 +154,8 @@
   }
 
   &__subtitle {
-    padding: 4px 0;
     color: $mono-b-500;
+    padding: 4px 0;
 
     &:hover {
       opacity: 0.9;
@@ -151,9 +163,9 @@
   }
 
   &__subtitle-mid {
+    color: $mono-a-a900;
     display: block;
     padding-top: 8px;
-    color: $mono-a-a900;
 
     &:hover {
       opacity: 0.7;

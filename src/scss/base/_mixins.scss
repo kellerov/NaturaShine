@@ -1,15 +1,15 @@
 @mixin swiper-arrow-btn {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  box-shadow: 0 0 2px 1px $mono-a-a200;
-  background-position: center center;
-  background-size: 24px 24px;
-  background-repeat: no-repeat;
   background-color: $mono-b-500;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 1px $mono-a-a200;
+  height: 40px;
   transition: all 0.1s ease;
+  width: 40px;
 
-  // параметр свечения окружности //
+  // Параметр свечения окружности //
 
   &::after {
     content: "";

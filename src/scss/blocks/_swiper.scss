@@ -7,8 +7,8 @@
 }
 
 .title {
-  padding-top: 12px;
   color: $mono-b-500;
+  padding-top: 12px;
 }
 
 .text {
@@ -16,27 +16,29 @@
 }
 
 .swiper-container {
-  position: static;
   margin-top: 18px;
+  position: static;
 }
 
 .swiper-slide {
   & > div {
-    display: flex;
     align-items: center;
-    min-height: 380px;
-    background-repeat: no-repeat;
     background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
     border-radius: 6px;
+    display: flex;
+    min-height: 380px;
   }
 
   &__content {
     flex-basis: 30%;
     margin-left: 208px;
+
     @media #{$tablet} {
       flex-basis: 32%;
     }
+
     @media #{$mobile} {
       margin-left: 8px;
     }
@@ -44,22 +46,23 @@
 }
 
 .swiper-pagination {
-  position: relative;
-  top: 0;
   bottom: 10px;
   left: 0;
+  position: relative;
+  top: 0;
   width: 100%;
+
   @media #{$mobile} {
     display: none;
   }
 }
 
 .swiper-pagination-bullet {
-  display: inline-block;
-  width: 20px;
-  height: 2px;
   background: $mono-a-a500;
   border-radius: 24px;
+  display: inline-block;
+  height: 2px;
+  width: 20px;
 
   &:hover {
     opacity: 1;
@@ -74,14 +77,15 @@
 .swiper-button-prev {
   @include swiper-arrow-btn;
 
+  background-image: url(../icons/icon_arrow_L.svg);
   left: -32px;
-  background-image: url("../icons/icon_arrow_L.svg");
-  transition: all 0.1s ease;
   transform: translate(50%, 50%);
+  transition: all 0.1s ease;
 
   &:hover {
     box-shadow: 0 1px 10px rgb(0 0 0 / 30%);
   }
+
   @media #{$mobile} {
     display: none;
   }
@@ -90,14 +94,15 @@
 .swiper-button-next {
   @include swiper-arrow-btn;
 
+  background-image: url(../icons/icon_arrow_R.svg);
   right: 10px;
-  background-image: url("../icons/icon_arrow_R.svg");
-  transition: all 0.1s ease;
   transform: translate(50%, 50%);
+  transition: all 0.1s ease;
 
   &:hover {
     box-shadow: 0 1px 10px rgb(0 0 0 / 30%);
   }
+
   @media #{$mobile} {
     display: none;
   }

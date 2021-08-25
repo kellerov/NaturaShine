@@ -15,29 +15,29 @@ const prettierEslint = require("gulp-prettier-eslint");
 
 gulp.task("eslint", function Eslint() {
   return gulp
-    .src("src/js/*.js")
+    .src(["src/js/main.js"])
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
 });
 
-gulp.task("prettierEslint", function PrettierEslint() {
-  gulp.src("src/**/*.js").pipe(prettierEslint()).pipe(gulp.dest("./dist"));
-});
+// gulp.task("prettierEslint", function PrettierEslint() {
+//   gulp.src("src/**/*.js").pipe(prettierEslint()).pipe(gulp.dest("./dist"));
+// });
 
-function format() {
-  return gulp
-    .src("src/**/*.js")
-    .pipe(prettier({ singleQuote: true }))
-    .pipe(dest("dist"));
-}
+// function format() {
+//   return gulp
+//     .src("src/**/*.js")
+//     .pipe(prettier({ singleQuote: true }))
+//     .pipe(dest("dist"));
+// }
 
-function validate() {
-  return gulp.src("dist/**/*.js").pipe(prettier.check({ singleQuote: true }));
-}
+// function validate() {
+//   return gulp.src("dist/**/*.js").pipe(prettier.check({ singleQuote: true }));
+// }
 
-gulp.task("lint", function lintCssTask() {
-  return gulp.src("src/scss/blocks/**/*.+(scss|sass)").pipe(
+gulp.task("stylelint", function lintCssTask() {
+  return gulp.src("src/scss/**/*.+(scss|sass)").pipe(
     gulpStylelint({
       reporters: [{ formatter: "string", console: true }],
     })

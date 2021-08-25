@@ -1,8 +1,8 @@
 .advantages {
   &__background {
-    margin: 47px 0 67px;
     background: $secondary-1-300;
     border-radius: 6px;
+    margin: 47px 0 67px;
   }
 
   &__content {
@@ -11,8 +11,8 @@
   }
 
   &__subtitle {
-    padding-bottom: 8px;
     color: $mono-a-a900;
+    padding-bottom: 8px;
   }
 
   &__text {
@@ -20,23 +20,24 @@
   }
 
   &__subject {
-    padding: 12px 0 4px;
     color: $mono-a-a900;
+    padding: 12px 0 4px;
+
     @media #{$tablet} {
       padding: 14px 0 4px;
     }
   }
 
   &__descr {
-    padding-bottom: 16px;
     color: $mono-a-a600;
+    padding-bottom: 16px;
   }
 
   &__wrapper {
-    display: flex;
     align-items: center;
-    justify-content: space-around;
+    display: flex;
     height: 248px;
+    justify-content: space-around;
     text-align: center;
   }
 
@@ -45,37 +46,38 @@
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     justify-content: center;
     padding: 24px;
+
     @media #{$tablet} {
       padding: 12px;
     }
   }
 
   &__icon {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 64px;
-    height: 64px;
-    margin: 0 auto;
     background: $other-background;
     border-radius: 32px;
+    display: flex;
+    height: 64px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 64px;
   }
 
   img {
-    width: 36px;
     height: 38px;
+    width: 36px;
   }
 }
 
 .button_more {
-  width: 109px;
-  height: 40px;
-  color: $mono-a-a700;
-  cursor: pointer;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  color: $mono-a-a700;
+  cursor: pointer;
+  height: 40px;
   transition: all 0.1s ease;
+  width: 109px;
 
   &:hover {
     background-color: $other-background-1;
