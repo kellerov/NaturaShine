@@ -1,12 +1,8 @@
-//-- Для первого слайда swiper banner --//
+// Для первого слайда swiper banner //
 
 const swiper = new Swiper(".swiper-container", {
   direction: "horizontal",
   slidesPerView: 1,
-  // loop: true,
-  // autoplay: true,
-  // disableOnInteraction: false,
-
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -42,28 +38,14 @@ const swiper = new Swiper(".swiper-container", {
       slidesPerView: 1,
     },
   },
-  // on: {
-  //   init() {
-  //     this.el.addEventListener("mouseenter", () => {
-  //       this.autoplay.stop();
-  //     });
-
-  //     this.el.addEventListener("mouseleave", () => {
-  //       this.autoplay.start();
-  //     });
-  //   },
-  // },
 });
 
-//-- Для второго слайда Catalog --//
+// Для второго слайда Catalog //
 
 const modified = new Swiper(".modified", {
   slidesPerView: 5,
   spaceBetween: 24,
   slidesPerGroup: 5,
-  // loop: true,
-  // autoplay: true,
-  // disableOnInteraction: false,
   slideClass: "card",
   wrapperClass: "wrap",
   direction: "horizontal",
@@ -107,35 +89,4 @@ const modified = new Swiper(".modified", {
       slidesPerView: 5,
     },
   },
-  // on: {
-  //   init() {
-  //     this.el.addEventListener("mouseenter", () => {
-  //       this.autoplay.stop();
-  //     });
-
-  //     this.el.addEventListener("mouseleave", () => {
-  //       this.autoplay.start();
-  //     });
-  //   },
-  // },
 });
-
-//-- Menu hamburger --//
-
-// window.addEventListener("DOMContentLoaded", () => {
-//   const menu = document.querySelector(".menu__left"),
-//     menuItem = document.querySelectorAll(".menu__item_lower"),
-//     hamburger = document.querySelector(".hamburger");
-
-//   hamburger.addEventListener("click", () => {
-//     hamburger.classList.toggle("hamburger_active");
-//     menu.classList.toggle("menu__left_active");
-//   });
-
-//   menuItem.forEach((item) => {
-//     item.addEventListener("click", () => {
-//       hamburger.classList.toggle("hamburger_active");
-//       menu.classList.toggle("menu__left_active");
-//     });
-//   });
-// });

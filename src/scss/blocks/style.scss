@@ -10,13 +10,13 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
   background: linear-gradient(0deg, #fcfcfa, #fcfcfa), #f5f7fa;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -25,9 +25,9 @@ a {
 
 ul,
 li {
-  padding: 0;
-  margin: 0;
   display: block;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -36,89 +36,89 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .container {
+  margin: 0 auto;
   max-width: 1358px;
   padding: 0 15px;
-  margin: 0 auto;
   position: relative;
 }
 
 .title {
-  font-weight: 900;
   font-size: 40px;
-  line-height: 48px;
+  font-weight: 900;
   letter-spacing: 0.2px;
+  line-height: 48px;
 }
 
 .subtitle {
-  font-weight: 900;
   font-size: 28px;
+  font-weight: 900;
   line-height: 36px;
 }
 
 .body-100 {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
+  font-weight: 400;
   letter-spacing: 0.25px;
+  line-height: 20px;
 }
 
 .body-200 {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  font-weight: 400;
   letter-spacing: 0.5px;
+  line-height: 24px;
 }
 
 .body-300 {
-  font-weight: 900;
   font-size: 16px;
-  line-height: 24px;
+  font-weight: 900;
   letter-spacing: 0.5px;
+  line-height: 24px;
 }
 
 .caption {
-  font-weight: 400;
   font-size: 12px;
-  line-height: 16px;
+  font-weight: 400;
   letter-spacing: 0.4px;
+  line-height: 16px;
 }
 
 .typography {
-  font-weight: 900;
   font-size: 14px;
-  line-height: 16px;
+  font-weight: 900;
   letter-spacing: 0.5px;
+  line-height: 16px;
 }
 
 .price {
-  font-weight: 900;
   font-size: 20px;
-  line-height: 24px;
+  font-weight: 900;
   letter-spacing: 0.2px;
+  line-height: 24px;
 }
 
 .subject {
-  font-weight: 900;
   font-size: 18px;
-  line-height: 28px;
+  font-weight: 900;
   letter-spacing: 0.1px;
+  line-height: 28px;
 }
 
 .main {
-  font-weight: 900;
   font-size: 18px;
-  line-height: 24px;
+  font-weight: 900;
   letter-spacing: 0.15px;
+  line-height: 24px;
 }
 
 .email {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  font-weight: 400;
   letter-spacing: 0.15px;
+  line-height: 20px;
 }

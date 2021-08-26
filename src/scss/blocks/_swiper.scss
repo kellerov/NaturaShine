@@ -1,6 +1,11 @@
 .swiper {
   position: relative;
 }
+
+.block-swiper {
+  position: relative;
+}
+
 .subtitle {
   color: $mono-a-a900;
 }
@@ -15,26 +20,29 @@
 }
 
 .swiper-container {
-  position: static;
   margin-top: 18px;
+  position: static;
 }
 
 .swiper-slide {
   & > div {
-    background-repeat: no-repeat;
+    align-items: center;
     background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    min-height: 380px;
     border-radius: 6px;
     display: flex;
-    align-items: center;
+    min-height: 380px;
   }
+
   &__content {
     flex-basis: 30%;
     margin-left: 208px;
+
     @media #{$tablet} {
       flex-basis: 32%;
     }
+
     @media #{$mobile} {
       margin-left: 8px;
     }
@@ -42,22 +50,24 @@
 }
 
 .swiper-pagination {
-  position: relative;
-  width: 100%;
-  left: 0;
-  top: 0;
   bottom: 10px;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+
   @media #{$mobile} {
     display: none;
   }
 }
 
 .swiper-pagination-bullet {
-  width: 20px;
-  height: 2px;
-  display: inline-block;
   background: $mono-a-a500;
   border-radius: 24px;
+  display: inline-block;
+  height: 2px;
+  width: 20px;
+
   &:hover {
     opacity: 1;
     transition: all 0.1s ease;
@@ -70,28 +80,34 @@
 
 .swiper-button-prev {
   @include swiper-arrow-btn;
+
   background-image: url(../icons/icon_arrow_L.svg);
   left: -32px;
   transform: translate(50%, 50%);
   transition: all 0.1s ease;
-  @media #{$mobile} {
-    display: none;
-  }
+
   &:hover {
     box-shadow: 0 1px 10px rgb(0 0 0 / 30%);
+  }
+
+  @media #{$mobile} {
+    display: none;
   }
 }
 
 .swiper-button-next {
   @include swiper-arrow-btn;
+
   background-image: url(../icons/icon_arrow_R.svg);
   right: 10px;
   transform: translate(50%, 50%);
   transition: all 0.1s ease;
-  @media #{$mobile} {
-    display: none;
-  }
+
   &:hover {
     box-shadow: 0 1px 10px rgb(0 0 0 / 30%);
+  }
+
+  @media #{$mobile} {
+    display: none;
   }
 }

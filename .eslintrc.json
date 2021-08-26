@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+
+  "globals": {
+    "swiper": "writable",
+    "Swiper": "readonly"
+  },
+
+  "extends": ["eslint:recommended", "airbnb", "prettier"],
+  "plugins": ["autofix", "prettier"],
+
+  "rules": {
+    "typeof": 0,
+    "no-unused-vars": "off",
+    "autofix/no-debugger": "error"
+  }
+}

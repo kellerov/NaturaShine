@@ -2,73 +2,85 @@
   &__background {
     background: $secondary-1-300;
     border-radius: 6px;
-    margin: 47px 0 67px 0;
+    margin: 47px 0 67px;
   }
+
   &__content {
-    text-align: center;
     padding-top: 56px;
+    text-align: center;
   }
+
   &__subtitle {
-    padding-bottom: 8px;
     color: $mono-a-a900;
+    padding-bottom: 8px;
   }
+
   &__text {
     color: $mono-a-a700;
   }
+
   &__subject {
     color: $mono-a-a900;
-    padding: 12px 0 4px 0;
+    padding: 12px 0 4px;
+
     @media #{$tablet} {
-      padding: 14px 0 4px 0;
+      padding: 14px 0 4px;
     }
   }
+
   &__descr {
     color: $mono-a-a600;
     padding-bottom: 16px;
   }
+
   &__wrapper {
-    height: 248px;
+    align-items: center;
     display: flex;
+    height: 248px;
     justify-content: space-around;
     text-align: center;
-    align-items: center;
   }
+
   &__services {
-    padding: 24px;
     display: grid;
-    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    justify-content: center;
+    padding: 24px;
+
     @media #{$tablet} {
       padding: 12px;
     }
   }
+
   &__icon {
-    height: 64px;
-    width: 64px;
-    margin: 0 auto;
-    display: flex;
-    border-radius: 32px;
     align-items: center;
-    justify-content: center;
     background: $other-background;
+    border-radius: 32px;
+    display: flex;
+    height: 64px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 64px;
   }
+
   img {
-    width: 36px;
     height: 38px;
+    width: 36px;
   }
 }
 
 .button_more {
-  color: $mono-a-a700;
-  width: 109px;
-  height: 40px;
-  cursor: pointer;
+  background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  color: $mono-a-a700;
+  cursor: pointer;
+  height: 40px;
   transition: all 0.1s ease;
-  background: transparent;
+  width: 109px;
+
   &:hover {
-    box-shadow: 0 1px 5px rgb(0 0 0 / 30%);
     background-color: $other-background-1;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 30%);
   }
 }
