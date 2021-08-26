@@ -118,11 +118,18 @@
   }
 
   &__link {
+    border-radius: 4px;
     color: $mono-a-a800;
     transition: all 0.1s ease;
 
+    // display: flex;
+    // align-items: center;
+    // padding: 8px;
+    // justify-content: center;
+
     &:hover {
       opacity: 0.6;
+      // background: rgba(0, 0, 0, 0.04);
     }
   }
 }
