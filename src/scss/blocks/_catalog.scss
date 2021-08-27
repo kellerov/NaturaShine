@@ -6,12 +6,17 @@
 
   &__all {
     align-items: center;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     transition: all 0.1s ease;
 
+    // height: 40px;
+    padding: 12px;
+
     &:hover {
-      opacity: 0.6;
+      // opacity: 0.6;
+      background: $mono-a-a50;
     }
   }
 
@@ -176,6 +181,10 @@
 .nxt,
 .prv {
   background-color: $mono-a-a75;
+
+  &:active {
+    background-color: $mono-a-a150;
+  }
 
   @media #{$mobile} {
     display: none;
