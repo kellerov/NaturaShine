@@ -52,8 +52,8 @@ const modified = new Swiper(".modified", {
   loopFillGroupWithBlank: true,
 
   navigation: {
-    nextEl: ".nxt",
-    prevEl: ".prv",
+    nextEl: ".next",
+    prevEl: ".prev",
   },
 
   pagination: {
