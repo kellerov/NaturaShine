@@ -1,6 +1,6 @@
 // Для первого слайда swiper banner //
 
-const swiper = new Swiper(".swiper-container", {
+const swiper = new Swiper(".container-first", {
   direction: "horizontal",
   slidesPerView: 1,
   pagination: {
@@ -9,8 +9,8 @@ const swiper = new Swiper(".swiper-container", {
   },
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".front",
+    prevEl: ".back",
   },
 
   breakpoints: {

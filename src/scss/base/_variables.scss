@@ -3,6 +3,7 @@
 $warn-a800: rgba(244, 67, 54, 0.7);
 $mono-a-a50: rgba(0, 0, 0, 0.04);
 $mono-a-a100: rgba(0, 0, 0, 0.08);
+$mono-a-a150: rgba(0, 0, 0, 0.1);
 $mono-a-a200: rgba(0, 0, 0, 0.12);
 $mono-a-a900: rgba(0, 0, 0, 0.88);
 $mono-a-a800: rgba(0, 0, 0, 0.72);
@@ -19,6 +20,12 @@ $secondary-2-300: #001f39;
 $other-background: #fcfcfa;
 $other-background-1: #f5f7fa;
 $other-background-2: #f5f3f0;
+
+$other-background-3: #001414;
+$other-background-4: #192b2b;
+$other-background-5: #dfded9;
+$other-background-6: #d1d0cc;
+
 $gradient-overlay-d800: linear-gradient(
   180deg,
   rgba(0, 0, 0, 0) 0%,

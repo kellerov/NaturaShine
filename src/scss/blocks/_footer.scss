@@ -3,11 +3,22 @@
   padding: 48px 0px 40px;
 
   &__social_item {
+    border-radius: 4px;
     padding: 0 8px;
     transition: all 0.1s ease;
 
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    padding: 8px;
+
     &:hover {
-      opacity: 0.6;
+      // opacity: 0.6;
+      background-color: $other-background-5;
+    }
+
+    &:active {
+      background-color: $other-background-6;
     }
   }
 
@@ -68,9 +79,12 @@
 
   &__link {
     color: $mono-a-a700;
+    transition: all 0.1s ease;
 
     &:hover {
-      color: rgba(0, 0, 0, 0.8);
+      // color: rgba(0, 0, 0, 0.8);
+      // text-decoration: underline;
+      border-bottom: 1px solid $mono-a-a700;
     }
   }
 
@@ -98,7 +112,9 @@
     color: $mono-a-a700;
 
     &:hover {
-      color: rgba(0, 0, 0, 0.8);
+      // color: rgba(0, 0, 0, 0.8);
+      // text-decoration: underline;
+      border-bottom: 1px solid $mono-a-a700;
     }
   }
 
@@ -144,7 +160,9 @@
     color: $mono-a-a700;
 
     &:hover {
-      color: rgba(0, 0, 0, 0.8);
+      // color: rgba(0, 0, 0, 0.8);
+      // text-decoration: underline;
+      border-bottom: 1px solid $mono-a-a700;
     }
   }
 
