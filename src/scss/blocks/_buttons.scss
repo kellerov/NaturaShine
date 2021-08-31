@@ -49,7 +49,7 @@
   &_subscribe {
     color: $mono-b-500;
     height: 56px;
-    margin: 10px 0px 0px 10px;
+    // margin: 10px 0px 0px 10px;
     width: 132px;
 
     &:hover,
@@ -57,5 +57,11 @@
       background: #3a95ca;
       box-shadow: 0 1px 4px rgb(0 0 0 / 30%);
     }
+  }
+}
+
+.email {
+  &__subscribe {
+    margin: 10px 0px 0px 10px;
   }
 }
