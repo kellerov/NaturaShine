@@ -3,14 +3,13 @@
   padding: 48px 0px 40px;
 
   &__social_item {
-    border-radius: 4px;
-    padding: 0 8px;
-    transition: all 0.1s ease;
-
     align-items: center;
+    border-radius: 4px;
     display: inline-flex;
     justify-content: center;
+    padding: 0 8px;
     padding: 8px;
+    transition: all 0.1s ease;
 
     &:hover {
       // opacity: 0.6;

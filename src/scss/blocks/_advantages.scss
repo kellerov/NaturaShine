@@ -68,24 +68,3 @@
     width: 36px;
   }
 }
-
-.button_more {
-  background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  color: $mono-a-a700;
-  cursor: pointer;
-  height: 40px;
-  transition: all 0.1s ease;
-  width: 109px;
-
-  &:hover {
-    background-color: $other-background-3;
-    box-shadow: 0 1px 5px rgb(0 0 0 / 30%);
-    color: $mono-b-500;
-  }
-
-  &:active {
-    background-color: $other-background-4;
-  }
-}

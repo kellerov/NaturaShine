@@ -24,7 +24,7 @@
                 </a>
                 <div class="search-box">
                     <form class="search-box__form action=" #" method="get">
-                        <input class="search-box__input" type="text" name="query" value="" maxlength="64"
+                        <input class="search-box__input input__box" type="text" name="query" value="" maxlength="64"
                             placeholder="Поиск" autocomplete="off" />
                         <input class="search-box__submit" type="submit" name="submit" value="" />
                     </form>
@@ -330,8 +330,8 @@
                     </div>
                 </div>
                 <div class="swiper-pagination page"></div>
-                <div class="swiper-button-prev prv"></div>
-                <div class="swiper-button-next nxt"></div>
+                <div class="swiper-button-prev prev"></div>
+                <div class="swiper-button-next next"></div>
             </div>
         </section>
         <section class="advantages">
@@ -482,15 +482,16 @@
                         <p class="mailing__text body-200">
                             Будьте в курсе всех новостей и акций!
                         </p>
-                        <div class="search-box_mini">
-                            <form class="email" action="#" method="post">
-                                <div class="email__wrapper">
-                                    <input class="email__input" type="text" name="email" placeholder="Введите email">
-                                    <div class="email__img">
+                        <div class="mailing-box">
+                            <form class="mailing-box__form" action="#" method="post">
+                                <div class="mailing-box__wrapper">
+                                    <input class="mailing-box__input input__mini" type="text" name="email"
+                                        placeholder="Введите email">
+                                    <div class="mailing-box__img">
                                         <img src="../icons/icon_mail.svg" alt="">
                                     </div>
                                 </div>
-                                <button class="button button_subscribe typography" href="#">
+                                <button class="button button_subscribe mailing-box__subscribe typography" href="#">
                                     Подписаться
                                 </button>
                             </form>
