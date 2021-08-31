@@ -1,28 +1,24 @@
-.input_box {
-  background-color: transparent;
-  border: 2px solid $mono-a-a200;
-  border-radius: 4px;
-  color: $mono-a-500;
-  font-size: 14px;
-  line-height: 20px;
-  outline: none;
-  padding: 10px;
-  transition: all 0.1s ease;
-}
+.input {
+  &__box {
+    background-color: transparent;
+    border: 2px solid $mono-a-a200;
+    border-radius: 4px;
+    color: $mono-a-500;
+    font-size: 14px;
+    line-height: 20px;
+    outline: none;
+    padding: 10px;
+    transition: all 0.1s ease;
+  }
 
-.input_mini {
-  background-color: $mono-b-500;
-  border: 2px solid $mono-a-a200;
-  border-radius: 4px;
-  color: $mono-a-500;
-  outline: none;
-  padding: 18px;
-  padding-left: 41px;
-  transition: all 0.1s ease;
-}
-
-.mailing-box {
-  &__subscribe {
-    margin: 10px 0px 0px 10px;
+  &__mini {
+    background-color: $mono-b-500;
+    border: 2px solid $mono-a-a200;
+    border-radius: 4px;
+    color: $mono-a-500;
+    outline: none;
+    padding: 18px;
+    padding-left: 41px;
+    transition: all 0.1s ease;
   }
 }
