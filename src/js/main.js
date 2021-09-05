@@ -90,3 +90,45 @@ const modified = new Swiper(".modified", {
     },
   },
 });
+
+// Адаптивное меню нижней шапки "Еще" //
+
+function ld() {
+  const a = window.innerWidth;
+  const b = window.innerHeight;
+  const c = window.outerWidth;
+  const d = window.outerHeight;
+  console.log(
+    "innerWidth = " +
+      a +
+      " " +
+      "innerHeight = " +
+      b +
+      " " +
+      "outerWidth = " +
+      c +
+      " " +
+      "outerHeight = " +
+      d
+  );
+}
+window.addEventListener("load", ld());
+
+// const width =
+//   window.innerWidth ||
+//   document.documentElement.clientWidth ||
+//   document.body.clientWidth;
+// const height =
+//   window.innerHeight ||
+//   document.documentElement.clientHeight ||
+//   document.body.clientHeight;
+
+// console.log(width, height);
+
+// const win = window,
+//   doc = document,
+//   docElem = doc.documentElement,
+//   body = doc.getElementsByTagName("body")[0],
+//   x = win.innerWidth || docElem.clientWidth || body.clientWidth,
+//   y = win.innerHeight || docElem.clientHeight || body.clientHeight;
+// console.log(x + " × " + y);
