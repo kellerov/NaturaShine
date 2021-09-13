@@ -1,22 +1,25 @@
 .menu-other {
+  border-radius: 4px;
   cursor: pointer;
-  // display: none;
+  overflow: hidden;
   position: relative;
-  // resize: both;
-  // white-space: nowrap;
   transition: color 0.25s ease;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.04);
+    overflow: visible;
+  }
 
   &::after {
     content: "";
     height: 200%;
     left: 0;
     position: absolute;
-    top: 10px;
+    top: 9px;
     width: 100%;
   }
 
   @media (max-width: 767px) {
-    display: block;
     padding: 0 14px 8px 1px;
   }
 
@@ -36,33 +39,39 @@
   }
 
   &__menu-more {
-    background: #4c1e87;
-    display: none;
+    background: $menu-more;
     flex-direction: column;
     justify-content: center;
     position: absolute;
     right: 0;
     top: 100%;
-    transform: translateY(20px);
-    width: 249px;
+    transform: translateY(15px);
+    visibility: visible;
+    width: 215px;
     z-index: 50;
+
+    &:hover {
+      visibility: visible;
+    }
   }
 }
 
 span svg {
-  height: 6px;
-  margin-top: 7px;
-  transform: translateY(-50%);
+  // height: 7px;
+  margin-left: 6px;
+  margin-top: 2px;
+  transform: rotate(0deg);
+  // transform: translateY(-50%);
   transition: transform 0.25s ease;
-  width: 9px;
+  // width: 9px;
+
+  &:hover {
+    transform: rotate(180deg);
+    // transition: transform 0.25s ease;
+    // transform: translateY(50%);
+  }
 
   // position: absolute;
   // right: 0;
   // top: 50%;
 }
-
-// ._hidden {
-//   opacity: 0;
-//   overflow: hidden;
-//   visibility: hidden;
-// }

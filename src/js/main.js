@@ -93,42 +93,36 @@ const modified = new Swiper(".modified", {
 
 // Адаптивное меню нижней шапки "Еще" //
 
-function ld() {
-  const a = window.innerWidth;
-  const b = window.innerHeight;
-  const c = window.outerWidth;
-  const d = window.outerHeight;
-  console.log(
-    "innerWidth = " +
-      a +
-      " " +
-      "innerHeight = " +
-      b +
-      " " +
-      "outerWidth = " +
-      c +
-      " " +
-      "outerHeight = " +
-      d
-  );
-}
-window.addEventListener("load", ld());
+document.addEventListener("DOMContentLoaded", function (event) {
+  const changeMenu = function () {
+    //Получили ширину области в которой необходимо скрыть кнопки
+    const maxWidth = document.getElementById("menu__panel_active").clientWidth;
+    //Получили ширину кнопки Еще
+    const myMenuOthers = document.getElementById("myMenu-other");
+    const moreWidth = myMenuOthers.clientWidth;
 
-// const width =
-//   window.innerWidth ||
-//   document.documentElement.clientWidth ||
-//   document.body.clientWidth;
-// const height =
-//   window.innerHeight ||
-//   document.documentElement.clientHeight ||
-//   document.body.clientHeight;
+    const workingArea = maxWidth - moreWidth;
 
-// console.log(width, height);
+    //Получаем элементы по имени класса(кнопки меню)
+    const menuItems = document.getElementsByClassName("menu__item_lower");
+    const moreItems = document.getElementsByClassName("menu__item_more");
 
-// const win = window,
-//   doc = document,
-//   docElem = doc.documentElement,
-//   body = doc.getElementsByTagName("body")[0],
-//   x = win.innerWidth || docElem.clientWidth || body.clientWidth,
-//   y = win.innerHeight || docElem.clientHeight || body.clientHeight;
-// console.log(x + " × " + y);
+    let widthWithButtons = 0;
+    myMenuOthers.hidden = true;
+
+    for (let idx = 0; idx < menuItems.length; idx++) {
+      menuItems[idx].hidden = false;
+      moreItems[idx].hidden = true;
+      if (widthWithButtons + menuItems[idx].clientWidth > workingArea) {
+        menuItems[idx].hidden = true;
+        moreItems[idx].hidden = false;
+        myMenuOthers.hidden = false;
+      }
+      widthWithButtons = widthWithButtons + menuItems[idx].clientWidth;
+    }
+  };
+
+  changeMenu();
+
+  window.addEventListener("resize", changeMenu);
+});
