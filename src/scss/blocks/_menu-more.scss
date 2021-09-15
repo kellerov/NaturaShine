@@ -4,15 +4,6 @@
   position: relative;
   transition: all 0.1s ease;
 
-  // &::after {
-  //   content: "";
-  //   height: 200%;
-  //   left: 0;
-  //   position: absolute;
-  //   top: 9px;
-  //   width: 100%;
-  // }
-
   @media (max-width: 767px) {
     padding: 0 14px 8px 1px;
   }
