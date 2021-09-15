@@ -45,7 +45,7 @@ const swiper = new Swiper(".container-first", {
 const modified = new Swiper(".modified", {
   slidesPerView: 5,
   spaceBetween: 24,
-  slidesPerGroup: 5,
+  slidesPerGroup: 1,
   slideClass: "card",
   wrapperClass: "wrap",
   direction: "horizontal",
@@ -126,3 +126,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   window.addEventListener("resize", changeMenu);
 });
+
+function showMenuItem() {
+  document.getElementById("moreMenu").classList.toggle("show-item");
+}
+window.onclick = function (event) {
+  if (!event.target.matches(".dropbtn")) {
+    let moreMenu = document.getElementById("moreMenu");
+    if (moreMenu.classList.contains("show-item")) {
+      moreMenu.classList.remove("show-item");
+    }
+  }
+};

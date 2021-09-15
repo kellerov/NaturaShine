@@ -1,23 +1,17 @@
 .menu-other {
   border-radius: 4px;
   cursor: pointer;
-  overflow: hidden;
   position: relative;
-  transition: color 0.25s ease;
+  transition: all 0.1s ease;
 
-  &:hover {
-    background: rgba(0, 0, 0, 0.04);
-    overflow: visible;
-  }
-
-  &::after {
-    content: "";
-    height: 200%;
-    left: 0;
-    position: absolute;
-    top: 9px;
-    width: 100%;
-  }
+  // &::after {
+  //   content: "";
+  //   height: 200%;
+  //   left: 0;
+  //   position: absolute;
+  //   top: 9px;
+  //   width: 100%;
+  // }
 
   @media (max-width: 767px) {
     padding: 0 14px 8px 1px;
@@ -25,53 +19,50 @@
 
   &__wrap {
     align-items: center;
+    border-radius: 4px;
     display: flex;
     height: 100%;
+    transition: all 0.1s ease;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.04);
+    }
+
+    &:active {
+      background: $mono-a-a150;
+    }
   }
 
-  &__text {
-    color: $mono-a-a800;
-    padding: 8px;
-
-    @media (max-width: 767px) {
-      padding: 5px;
-    }
+  &__arrow {
+    margin-left: 6px;
   }
 
   &__menu-more {
     background: $menu-more;
     flex-direction: column;
     justify-content: center;
+    opacity: 0;
     position: absolute;
     right: 0;
     top: 100%;
-    transform: translateY(15px);
-    visibility: visible;
+    transform: translateY(17px);
     width: 215px;
     z-index: 50;
-
-    &:hover {
-      visibility: visible;
-    }
   }
 }
 
-span svg {
-  // height: 7px;
-  margin-left: 6px;
-  margin-top: 2px;
-  transform: rotate(0deg);
-  // transform: translateY(-50%);
-  transition: transform 0.25s ease;
-  // width: 9px;
+.show-item {
+  margin: 0;
+  opacity: 1;
+}
 
-  &:hover {
-    transform: rotate(180deg);
-    // transition: transform 0.25s ease;
-    // transform: translateY(50%);
+.dropbtn {
+  background-color: transparent;
+  border: none;
+  color: $mono-a-a800;
+  padding: 8px;
+
+  @media (max-width: 767px) {
+    padding: 5px;
   }
-
-  // position: absolute;
-  // right: 0;
-  // top: 50%;
 }
