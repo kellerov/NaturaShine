@@ -95,15 +95,10 @@ const modified = new Swiper(".modified", {
 
 document.addEventListener("DOMContentLoaded", function (event) {
   const changeMenu = function () {
-    //Получили ширину области в которой необходимо скрыть кнопки
     const maxWidth = document.getElementById("menu__panel_active").clientWidth;
-    //Получили ширину кнопки Еще
     const myMenuOthers = document.getElementById("myMenu-other");
     const moreWidth = myMenuOthers.clientWidth;
-
     const workingArea = maxWidth - moreWidth;
-
-    //Получаем элементы по имени класса(кнопки меню)
     const menuItems = document.getElementsByClassName("menu__item_lower");
     const moreItems = document.getElementsByClassName("menu__item_more");
 
@@ -125,16 +120,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
   changeMenu();
 
   window.addEventListener("resize", changeMenu);
-});
 
-function showMenuItem() {
-  document.getElementById("moreMenu").classList.toggle("show-item");
-}
-window.onclick = function (event) {
-  if (!event.target.matches(".dropbtn")) {
-    let moreMenu = document.getElementById("moreMenu");
-    if (moreMenu.classList.contains("show-item")) {
-      moreMenu.classList.remove("show-item");
+  // Функция клика по меню "Еще" //
+
+  const moreMenu = document.getElementById("moreMenu");
+  document.getElementById("dropbtn").addEventListener("click", function () {
+    moreMenu.classList.toggle("show-item");
+  });
+
+  window.addEventListener("click", function (event) {
+    if (!event.target.matches(".dropbtn")) {
+      if (moreMenu.classList.contains("show-item")) {
+        moreMenu.classList.remove("show-item");
+      }
     }
-  }
-};
+  });
+});
