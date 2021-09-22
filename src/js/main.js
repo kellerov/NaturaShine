@@ -124,12 +124,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // Функция клика по меню "Еще" //
 
   const moreMenu = document.getElementById("moreMenu");
-  document.getElementById("dropbtn").addEventListener("click", function () {
+  const dropBtn = document.getElementById("dropbtn");
+  dropBtn.addEventListener("click", function () {
     moreMenu.classList.toggle("show-item");
   });
 
   window.addEventListener("click", function (event) {
-    if (!event.target.matches(".dropbtn")) {
+    if (!dropBtn.contains(event.target)) {
       if (moreMenu.classList.contains("show-item")) {
         moreMenu.classList.remove("show-item");
       }
