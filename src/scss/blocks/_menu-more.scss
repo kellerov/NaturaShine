@@ -1,0 +1,59 @@
+.menu-other {
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.1s ease;
+
+  @media (max-width: 767px) {
+    padding: 0 14px 8px 1px;
+  }
+
+  &__wrap {
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    height: 100%;
+    transition: all 0.1s ease;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.04);
+    }
+
+    &:active {
+      background: $mono-a-a150;
+    }
+  }
+
+  &__arrow {
+    margin-left: 6px;
+  }
+
+  &__menu-more {
+    background: $menu-more;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transform: translateY(17px);
+    width: 215px;
+    z-index: 50;
+  }
+}
+
+.show-item {
+  margin: 0;
+  opacity: 1;
+}
+
+.dropbtn {
+  background-color: transparent;
+  border: none;
+  color: $mono-a-a800;
+  padding: 8px;
+
+  @media (max-width: 767px) {
+    padding: 5px;
+  }
+}

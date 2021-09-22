@@ -45,7 +45,7 @@ const swiper = new Swiper(".container-first", {
 const modified = new Swiper(".modified", {
   slidesPerView: 5,
   spaceBetween: 24,
-  slidesPerGroup: 5,
+  slidesPerGroup: 1,
   slideClass: "card",
   wrapperClass: "wrap",
   direction: "horizontal",
@@ -89,4 +89,51 @@ const modified = new Swiper(".modified", {
       slidesPerView: 5,
     },
   },
+});
+
+// Адаптивное меню нижней шапки "Еще" //
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  const changeMenu = function () {
+    const maxWidth = document.getElementById("menu__panel_active").clientWidth;
+    const myMenuOthers = document.getElementById("myMenu-other");
+    const moreWidth = myMenuOthers.clientWidth;
+    const workingArea = maxWidth - moreWidth;
+    const menuItems = document.getElementsByClassName("menu__item_lower");
+    const moreItems = document.getElementsByClassName("menu__item_more");
+
+    let widthWithButtons = 0;
+    myMenuOthers.hidden = true;
+
+    for (let idx = 0; idx < menuItems.length; idx++) {
+      menuItems[idx].hidden = false;
+      moreItems[idx].hidden = true;
+      if (widthWithButtons + menuItems[idx].clientWidth > workingArea) {
+        menuItems[idx].hidden = true;
+        moreItems[idx].hidden = false;
+        myMenuOthers.hidden = false;
+      }
+      widthWithButtons = widthWithButtons + menuItems[idx].clientWidth;
+    }
+  };
+
+  changeMenu();
+
+  window.addEventListener("resize", changeMenu);
+
+  // Функция клика по меню "Еще" //
+
+  const moreMenu = document.getElementById("moreMenu");
+  const dropBtn = document.getElementById("dropbtn");
+  dropBtn.addEventListener("click", function () {
+    moreMenu.classList.toggle("show-item");
+  });
+
+  window.addEventListener("click", function (event) {
+    if (!dropBtn.contains(event.target)) {
+      if (moreMenu.classList.contains("show-item")) {
+        moreMenu.classList.remove("show-item");
+      }
+    }
+  });
 });

@@ -16,6 +16,9 @@
   "rules": {
     "typeof": 0,
     "no-unused-vars": "off",
-    "autofix/no-debugger": "error"
+    "no-console": 0,
+    "autofix/no-debugger": "error",
+    "no-useless-concat": 0,
+    "eslint prefer-template": null
   }
 }
